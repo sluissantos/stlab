@@ -1,0 +1,2 @@
+/home/santos/esp5.1.2/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-ar qc libuart.a CMakeFiles/__idf_uart.dir/uart_main.c.obj
+/home/santos/esp5.1.2/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-ranlib libuart.a

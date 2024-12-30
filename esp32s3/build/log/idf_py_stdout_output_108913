@@ -1,0 +1,1596 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490cc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 30 2024 16:32:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 otadata          OTA data         01 00 00009000 00002000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000b000 00005000[0m
+[0;32mI (80) boot:  2 ota_0            OTA app          00 10 00010000 001f0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 00200000 001f0000[0m
+[0;32mI (94) boot:  4 nvs              WiFi data        01 02 003f0000 00010000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d538h ( 54584) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001d560 vaddr=3fc93600 size=02ab8h ( 10936) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=247dch (149468) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=00044804 vaddr=3fc960b8 size=0001ch (    28) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=00044828 vaddr=40374000 size=0f540h ( 62784) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu up.[0m
+[0;32mI (196) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (215) cpu_start: Pro cpu start user code[0m
+[0;32mI (215) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (215) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     revolog5g[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (227) cpu_start: Compile time:     Dec 30 2024 16:39:51[0m
+[0;32mI (233) cpu_start: ELF file SHA256:  b7a35129fb822a6c...[0m
+[0;32mI (239) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (249) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (254) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (259) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (266) heap_init: At 3FC97A78 len 00051C98 (327 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (279) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (292) spi_flash: detected chip: gd[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;32mI (300) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (306) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (314) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (319) coexist: coexist rom version e7ae62f[0m
+[0;32mI (324) app_start: Starting scheduler on CPU0[0m
+[0;32mI (329) app_start: Starting scheduler on CPU1[0m
+[0;32mI (329) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[0;32mI (339) STORAGE: Initializing...[0m
+[0;32mI (369) XPOWER: Using ESP-IDF Driver interface.[0m
+[0;32mI (369) XPOWER: getID:0x4a[0m
+[0;32mI (1369) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) MODEM: .AT
+[0m
+[0;32mI (1519) MODEM: AT
+OK
+[0m
+[0;32mI (1519) MODEM: Start modem successfully
+[0m
+[0;32mI (1569) MODEM: .AT+CPIN?
+[0m
+[0;32mI (1669) MODEM: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (1669) MODEM: SIM Card READY
+[0m
+[0;32mI (1719) MODEM: .AT+CNMP=51
+[0m
+[0;32mI (1819) MODEM: AT+CNMP=51
+OK
+[0m
+[0;32mI (1819) MODEM: Set network mode successfully
+[0m
+[0;32mI (1869) MODEM: .AT+CMNB=1
+[0m
+[0;32mI (1969) MODEM: AT+CMNB=1
+OK
+[0m
+[0;32mI (1969) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (2019) MODEM: .AT+CEREG?
+[0m
+[0;32mI (2119) MODEM: AT+CEREG?
++CEREG: 0,1
+
+OK
+[0m
+[0;32mI (2119) MODEM: Get EPS network registration status successfully
+[0m
+[0;32mI (2169) MODEM: .AT+CGATT?
+[0m
+[0;32mI (2269) MODEM: AT+CGATT?
++CGATT: 1
+
+OK
+[0m
+[0;32mI (2269) MODEM: Attached from GPRS service sucessfully[0m
+[0;32mI (2319) MODEM: .AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+[0m
+[0;32mI (2419) MODEM: AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+OK
+[0m
+[0;32mI (2419) MODEM: PDP context sucessfully[0m
+[0;32mI (2469) MODEM: .AT+CNACT?
+[0m
+[0;32mI (2569) MODEM: AT+CNACT?
++CNACT: 0,1,"10.229.222.14"
++CNACT: 1,0,"0.0.0.0"
++CNACT: 2,0,"0.0.0.0"
++CNACT: 3,0,"0.0.0.0"
+
+OK
+[0m
+[0;32mI (2569) MODEM: IP MODEM: 10.229.222.14[0m
+[0;32mI (2569) MODEM: App network active sucessfully[0m
+[0;32mI (2579) MODEM: GPRS status : connected
+[0m
+[0;32mI (2629) MODEM: .AT+CGNAPN
+[0m
+[0;32mI (2729) MODEM: AT+CGNAPN
++CGNAPN: 1,"smart.m2m.vivo.com.br"
+
+OK
+[0m
+[0;32mI (2729) MODEM: Get network mode successfully
+[0m
+[0;32mI (2779) MODEM: .AT+GSN
+[0m
+[0;32mI (2879) MODEM: AT+GSN
+860016047408716
+
+OK
+[0m
+[0;32mI (2879) MODEM: Get IMEI sucessfully[0m
+[0;32mI (2879) MODEM: IMEI = 860016047408716[0m
+[0;32mI (2929) MODEM: .AT+SMDISC
+[0m
+[0;32mI (3029) MODEM: AT+SMDISC
+ERROR
+[0m
+[0;32mI (3029) MQTT: MQTT disconnected unsuccessfully
+[0m
+[0;32mI (4079) MODEM: .AT+SMCONF="CLIENTID","860016047408716"
+[0m
+[0;32mI (4179) MODEM: AT+SMCONF="CLIENTID","860016047408716"
+OK
+[0m
+[0;32mI (4229) MODEM: .AT+SMCONF="URL","gw.qa.revolog.com.br",1883
+[0m
+[0;32mI (4329) MODEM: AT+SMCONF="URL","gw.qa.revolog.com.br",1883
+OK
+[0m
+[0;32mI (4379) MODEM: .AT+SMCONF="USERNAME","tecnologia"
+[0m
+[0;32mI (4479) MODEM: AT+SMCONF="USERNAME","tecnologia"
+OK
+[0m
+[0;32mI (4529) MODEM: .AT+SMCONF="PASSWORD","128Parsecs!"
+[0m
+[0;32mI (4629) MODEM: AT+SMCONF="PASSWORD","128Parsecs!"
+OK
+[0m
+[0;32mI (4679) MODEM: .AT+SMCONF="CLEANSS",0
+[0m
+[0;32mI (4779) MODEM: AT+SMCONF="CLEANSS",0
+OK
+[0m
+[0;32mI (4829) MODEM: .AT+SMCONF="QOS",0
+[0m
+[0;32mI (4929) MODEM: AT+SMCONF="QOS",0
+OK
+[0m
+[0;32mI (4979) MODEM: .AT+SMCONF="RETAIN",0
+[0m
+[0;32mI (5079) MODEM: AT+SMCONF="RETAIN",0
+OK
+[0m
+[0;32mI (5129) MODEM: .AT+SMCONF="KEEPTIME",600
+[0m
+[0;32mI (5229) MODEM: AT+SMCONF="KEEPTIME",600
+OK
+[0m
+[0;32mI (5279) MODEM: .AT+SMCONF?
+[0m
+[0;32mI (5379) MODEM: AT+SMCONF?
++SMCONF: 
+CLIENTID: "860016047408716"
+URL: "gw.qa.revolog.com.br",1883
+KEEPTIME: 600
+USERNAME: "tecnologia"
+PASSWORD: "128Parsecs!"
+CLEANSS: 0
+QOS: 0
+TOPIC: ""
+MESSAGE: ""
+RETAIN: 0
+SUBHEX: 0
+ASYNCMODE: 0
+MESSAGELEN: 0
+
+OK
+[0m
+[0;32mI (5439) MODEM: .AT+SMCONN
+[0m
+[0;32mI (5539) MODEM: AT+SMCONN[0m
+[0;32mI (5539) MQTT: MQTT Client no connected[0m
+[0;32mI (6589) MODEM: .AT+SMCONN
+[0m
+[0;32mI (7589) MODEM: .AT+SMCONN
+[0m
+[0;32mI (8589) MODEM: .AT+SMCONN
+[0m
+[0;32mI (9589) MODEM: .AT+SMCONN
+[0m
+[0;32mI (10589) MODEM: .AT+SMCONN
+[0m
+[0;32mI (11589) MQTT: MQTT Client connect error[0m
+[0;32mI (12639) MODEM: .AT+SMCONN
+[0m
+[0;32mI (13639) MODEM: .AT+SMCONN
+[0m
+[0;32mI (14639) MODEM: .AT+SMCONN
+[0m
+[0;32mI (15639) MODEM: .AT+SMCONN
+[0m
+[0;32mI (15739) MODEM: 
+OK
+AT+SMCONN
+ERROR
+[0m
+[0;32mI (15739) MQTT: MQTT Client connected[0m
+[0;32mI (15739) main_task: Returned from app_main()[0m
+[0;32mI (15809) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (15929) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (15989) MODEM: .AT+SMPUB="",8,1,1
+[0m
+[0;32mI (16109) MODEM: AT+SMPUB="",8,1,1
+> [0m
+[0;32mI (16169) MODEM: .first-on[0m
+[0;32mI (16289) MODEM: first-on
+ERROR
+[0m
+[0;32mI (17359) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (17479) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (17539) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (17659) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (17719) MODEM: .on[0m
+[0;32mI (17839) MODEM: on
+ERROR
+[0m
+[0;32mI (18909) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (19029) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (19089) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (19209) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (19269) MODEM: .on[0m
+[0;32mI (19389) MODEM: on
+ERROR
+[0m
+[0;32mI (20459) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (20579) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (20639) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (20759) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (20819) MODEM: .on[0m
+[0;32mI (20939) MODEM: on
+ERROR
+[0m
+[0;32mI (22009) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (22129) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (22189) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (22309) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (22369) MODEM: .on[0m
+[0;32mI (22489) MODEM: on
+ERROR
+[0m
+[0;32mI (23559) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (23679) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (23739) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (23859) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (23919) MODEM: .on[0m
+[0;32mI (24039) MODEM: on
+ERROR
+[0m
+[0;32mI (25109) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (25229) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (25289) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (25409) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (25469) MODEM: .on[0m
+[0;32mI (25589) MODEM: on
+ERROR
+[0m
+[0;32mI (26659) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (26779) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (26839) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (26959) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (27019) MODEM: .on[0m
+[0;32mI (27139) MODEM: on
+ERROR
+[0m
+[0;32mI (28209) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (28329) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (28389) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (28509) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (28569) MODEM: .on[0m
+[0;32mI (28689) MODEM: on
+ERROR
+[0m
+[0;32mI (29759) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (29879) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (29939) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (30059) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (30119) MODEM: .on[0m
+[0;32mI (30239) MODEM: on
+ERROR
+[0m
+[0;32mI (31309) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (31429) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (31489) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (31609) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (31669) MODEM: .on[0m
+[0;32mI (31789) MODEM: on
+ERROR
+[0m
+[0;32mI (32859) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (32979) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (33039) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (33159) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (33219) MODEM: .on[0m
+[0;32mI (33339) MODEM: on
+ERROR
+[0m
+[0;32mI (34409) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (34529) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (34589) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (34709) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (34769) MODEM: .on[0m
+[0;32mI (34889) MODEM: on
+ERROR
+[0m
+[0;32mI (35959) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (36079) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (36139) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (36259) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (36319) MODEM: .on[0m
+[0;32mI (36439) MODEM: on
+ERROR
+[0m
+[0;32mI (37509) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (37629) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (37689) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (37809) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (37869) MODEM: .on[0m
+[0;32mI (37989) MODEM: on
+ERROR
+[0m
+[0;32mI (39059) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (39179) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (39239) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (39359) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (39419) MODEM: .on[0m
+[0;32mI (39539) MODEM: on
+ERROR
+[0m
+[0;32mI (40609) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (40729) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (40789) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (40909) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (40969) MODEM: .on[0m
+[0;32mI (41089) MODEM: on
+ERROR
+[0m
+[0;32mI (42159) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (42279) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (42339) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (42459) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (42519) MODEM: .on[0m
+[0;32mI (42639) MODEM: on
+ERROR
+[0m
+[0;32mI (43709) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (43829) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (43889) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (44009) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (44069) MODEM: .on[0m
+[0;32mI (44189) MODEM: on
+ERROR
+[0m
+[0;32mI (45259) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (45379) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (45439) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (45559) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (45619) MODEM: .on[0m
+[0;32mI (45739) MODEM: on
+ERROR
+[0m
+[0;32mI (46809) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (46929) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (46989) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (47109) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (47169) MODEM: .on[0m
+[0;32mI (47289) MODEM: on
+ERROR
+[0m
+[0;32mI (48359) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (48479) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (48539) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (48659) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (48719) MODEM: .on[0m
+[0;32mI (48839) MODEM: on
+ERROR
+[0m
+[0;32mI (49909) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (50029) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (50089) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (50209) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (50269) MODEM: .on[0m
+[0;32mI (50389) MODEM: on
+ERROR
+[0m
+[0;32mI (51459) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (51579) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (51639) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (51759) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (51819) MODEM: .on[0m
+[0;32mI (51939) MODEM: on
+ERROR
+[0m
+[0;32mI (53009) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (53129) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (53189) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (53309) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (53369) MODEM: .on[0m
+[0;32mI (53489) MODEM: on
+ERROR
+[0m
+[0;32mI (54559) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (54679) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (54739) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (54859) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (54919) MODEM: .on[0m
+[0;32mI (55039) MODEM: on
+ERROR
+[0m
+[0;32mI (56109) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (56229) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (56289) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (56409) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (56469) MODEM: .on[0m
+[0;32mI (56589) MODEM: on
+ERROR
+[0m
+[0;32mI (57659) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (57779) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (57839) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (57959) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (58019) MODEM: .on[0m
+[0;32mI (58139) MODEM: on
+ERROR
+[0m
+[0;32mI (59209) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (59329) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (59389) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (59509) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (59569) MODEM: .on[0m
+[0;32mI (59689) MODEM: on
+ERROR
+[0m
+[0;32mI (60759) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (60879) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (60939) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (61059) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (61119) MODEM: .on[0m
+[0;32mI (61239) MODEM: on
+ERROR
+[0m
+[0;32mI (62309) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (62429) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (62489) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (62609) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (62669) MODEM: .on[0m
+[0;32mI (62789) MODEM: on
+ERROR
+[0m
+[0;32mI (63859) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (63979) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (64039) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (64159) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (64219) MODEM: .on[0m
+[0;32mI (64339) MODEM: on
+ERROR
+[0m
+[0;32mI (65409) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (65529) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (65589) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (65709) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (65769) MODEM: .on[0m
+[0;32mI (65889) MODEM: on
+ERROR
+[0m
+[0;32mI (66959) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (67079) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (67139) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (67259) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (67319) MODEM: .on[0m
+[0;32mI (67439) MODEM: on
+ERROR
+[0m
+[0;32mI (68509) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (68629) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (68689) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (68809) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (68869) MODEM: .on[0m
+[0;32mI (68989) MODEM: on
+ERROR
+[0m
+[0;32mI (70059) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (70179) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (70239) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (70359) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (70419) MODEM: .on[0m
+[0;32mI (70539) MODEM: on
+ERROR
+[0m
+[0;32mI (71609) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (71729) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (71789) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (71909) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (71969) MODEM: .on[0m
+[0;32mI (72089) MODEM: on
+ERROR
+[0m
+[0;32mI (73159) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (73279) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (73339) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (73459) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (73519) MODEM: .on[0m
+[0;32mI (73639) MODEM: on
+ERROR
+[0m
+[0;32mI (74709) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (74829) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (74889) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (75009) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (75069) MODEM: .on[0m
+[0;32mI (75189) MODEM: on
+ERROR
+[0m
+[0;32mI (76259) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (76379) MODEM: 
++SMSTATE: 0
+AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (76439) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (76559) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (76619) MODEM: .on[0m
+[0;32mI (76739) MODEM: on
+ERROR
+[0m
+[0;32mI (77809) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (77929) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (77989) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (78109) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (78169) MODEM: .on[0m
+[0;32mI (78289) MODEM: on
+ERROR
+[0m
+[0;32mI (79359) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (79479) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (79539) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (79659) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (79719) MODEM: .on[0m
+[0;32mI (79839) MODEM: on
+ERROR
+[0m
+[0;32mI (80909) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (81029) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (81089) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (81209) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (81269) MODEM: .on[0m
+[0;32mI (81389) MODEM: on
+ERROR
+[0m
+[0;32mI (82459) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (82579) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (82639) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (82759) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (82819) MODEM: .on[0m
+[0;32mI (82939) MODEM: on
+ERROR
+[0m
+[0;32mI (84009) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (84129) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (84189) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (84309) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (84369) MODEM: .on[0m
+[0;32mI (84489) MODEM: on
+ERROR
+[0m
+[0;32mI (85559) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (85679) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (85739) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (85859) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (85919) MODEM: .on[0m
+[0;32mI (86039) MODEM: on
+ERROR
+[0m
+[0;32mI (87109) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (87229) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (87289) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (87409) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (87469) MODEM: .on[0m
+[0;32mI (87589) MODEM: on
+ERROR
+[0m
+[0;32mI (88659) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (88779) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (88839) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (88959) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (89019) MODEM: .on[0m
+[0;32mI (89139) MODEM: on
+ERROR
+[0m
+[0;32mI (90209) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (90329) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (90389) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (90509) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (90569) MODEM: .on[0m
+[0;32mI (90689) MODEM: on
+ERROR
+[0m
+[0;32mI (91759) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (91879) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (91939) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (92059) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (92119) MODEM: .on[0m
+[0;32mI (92239) MODEM: on
+ERROR
+[0m
+[0;32mI (93309) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (93429) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (93489) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (93609) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (93669) MODEM: .on[0m
+[0;32mI (93789) MODEM: on
+ERROR
+[0m
+[0;32mI (94859) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (94979) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (95039) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (95159) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (95219) MODEM: .on[0m
+[0;32mI (95339) MODEM: on
+ERROR
+[0m
+[0;32mI (96409) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (96529) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (96589) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (96709) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (96769) MODEM: .on[0m
+[0;32mI (96889) MODEM: on
+ERROR
+[0m
+[0;32mI (97959) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (98079) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (98139) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (98259) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (98319) MODEM: .on[0m
+[0;32mI (98439) MODEM: on
+ERROR
+[0m
+[0;32mI (99509) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (99629) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (99689) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (99809) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (99869) MODEM: .on[0m
+[0;32mI (99989) MODEM: on
+ERROR
+[0m
+[0;32mI (101059) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (101179) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (101239) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (101359) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (101419) MODEM: .on[0m
+[0;32mI (101539) MODEM: on
+ERROR
+[0m
+[0;32mI (102609) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (102729) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (102789) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (102909) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (102969) MODEM: .on[0m
+[0;32mI (103089) MODEM: on
+ERROR
+[0m
+[0;32mI (104159) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (104279) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (104339) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (104459) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (104519) MODEM: .on[0m
+[0;32mI (104639) MODEM: on
+ERROR
+[0m
+[0;32mI (105709) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (105829) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (105889) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (106009) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (106069) MODEM: .on[0m
+[0;32mI (106189) MODEM: on
+ERROR
+[0m
+[0;32mI (107259) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (107379) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (107439) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (107559) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (107619) MODEM: .on[0m
+[0;32mI (107739) MODEM: on
+ERROR
+[0m
+[0;32mI (108809) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (108929) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (108989) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (109109) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (109169) MODEM: .on[0m
+[0;32mI (109289) MODEM: on
+ERROR
+[0m
+[0;32mI (110359) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (110479) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (110539) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (110659) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (110719) MODEM: .on[0m
+[0;32mI (110839) MODEM: on
+ERROR
+[0m
+[0;32mI (111909) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (112029) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (112089) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (112209) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (112269) MODEM: .on[0m
+[0;32mI (112389) MODEM: on
+ERROR
+[0m
+[0;32mI (113459) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (113579) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (113639) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (113759) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (113819) MODEM: .on[0m
+[0;32mI (113939) MODEM: on
+ERROR
+[0m
+[0;32mI (115009) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (115129) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (115189) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (115309) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (115369) MODEM: .on[0m
+[0;32mI (115489) MODEM: on
+ERROR
+[0m
+[0;32mI (116559) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (116679) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (116739) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (116859) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (116919) MODEM: .on[0m
+[0;32mI (117039) MODEM: on
+ERROR
+[0m
+[0;32mI (118109) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (118229) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (118289) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (118409) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (118469) MODEM: .on[0m
+[0;32mI (118589) MODEM: on
+ERROR
+[0m
+[0;32mI (119659) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (119779) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (119839) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (119959) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (120019) MODEM: .on[0m
+[0;32mI (120139) MODEM: on
+ERROR
+[0m
+[0;32mI (121209) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (121329) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (121389) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (121509) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (121569) MODEM: .on[0m
+[0;32mI (121689) MODEM: on
+ERROR
+[0m
+[0;32mI (122759) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (122879) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (122939) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (123059) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (123119) MODEM: .on[0m
+[0;32mI (123239) MODEM: on
+ERROR
+[0m
+[0;32mI (124309) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (124429) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (124489) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (124609) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (124669) MODEM: .on[0m
+[0;32mI (124789) MODEM: on
+ERROR
+[0m
+[0;32mI (125859) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (125979) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (126039) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (126159) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (126219) MODEM: .on[0m
+[0;32mI (126339) MODEM: on
+ERROR
+[0m
+[0;32mI (127409) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (127529) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (127589) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (127709) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (127769) MODEM: .on[0m
+[0;32mI (127889) MODEM: on
+ERROR
+[0m
+[0;32mI (128959) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (129079) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (129139) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (129259) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (129319) MODEM: .on[0m
+[0;32mI (129439) MODEM: on
+ERROR
+[0m
+[0;32mI (130509) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (130629) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (130689) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (130809) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (130869) MODEM: .on[0m
+[0;32mI (130989) MODEM: on
+ERROR
+[0m
+[0;32mI (132059) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (132179) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (132239) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (132359) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (132419) MODEM: .on[0m
+[0;32mI (132539) MODEM: on
+ERROR
+[0m
+[0;32mI (133609) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (133729) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (133789) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (133909) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (133969) MODEM: .on[0m
+[0;32mI (134089) MODEM: on
+ERROR
+[0m
+[0;32mI (135159) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (135279) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (135339) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (135459) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (135519) MODEM: .on[0m
+[0;32mI (135639) MODEM: on
+ERROR
+[0m
+[0;32mI (136709) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (136829) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (136889) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (137009) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (137069) MODEM: .on[0m
+[0;32mI (137189) MODEM: on
+ERROR
+[0m
+[0;32mI (138259) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (138379) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (138439) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (138559) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (138619) MODEM: .on[0m
+[0;32mI (138739) MODEM: on
+ERROR
+[0m
+[0;32mI (139809) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (139929) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (139989) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (140109) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (140169) MODEM: .on[0m
+[0;32mI (140289) MODEM: on
+ERROR
+[0m
+[0;32mI (141359) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (141479) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (141539) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (141659) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (141719) MODEM: .on[0m
+[0;32mI (141839) MODEM: on
+ERROR
+[0m
+[0;32mI (142909) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (143029) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (143089) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (143209) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (143269) MODEM: .on[0m
+[0;32mI (143389) MODEM: on
+ERROR
+[0m
+[0;32mI (144459) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (144579) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (144639) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (144759) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (144819) MODEM: .on[0m
+[0;32mI (144939) MODEM: on
+ERROR
+[0m
+[0;32mI (146009) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (146129) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (146189) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (146309) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (146369) MODEM: .on[0m
+[0;32mI (146489) MODEM: on
+ERROR
+[0m
+[0;32mI (147559) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (147679) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (147739) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (147859) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (147919) MODEM: .on[0m
+[0;32mI (148039) MODEM: on
+ERROR
+[0m
+[0;32mI (149109) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (149229) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (149289) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (149409) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (149469) MODEM: .on[0m
+[0;32mI (149589) MODEM: on
+ERROR
+[0m
+[0;32mI (150659) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (150779) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (150839) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (150959) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (151019) MODEM: .on[0m
+[0;32mI (151139) MODEM: on
+ERROR
+[0m
+[0;32mI (152209) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (152329) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (152389) MODEM: .AT+SMPUB="",2,1,1
+[0m
+[0;32mI (152509) MODEM: AT+SMPUB="",2,1,1
+> [0m
+[0;32mI (152569) MODEM: .on[0m
+[0;32mI (152689) MODEM: on
+ERROR
+[0m
+[0;32mI (153759) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (153879) MODEM: AT+SMSTATE?
++SMSTATE: 0
+
+OK
+[0m
+[0;32mI (153939) MODEM: .AT+SMPUB="",2,1,1
+[0m

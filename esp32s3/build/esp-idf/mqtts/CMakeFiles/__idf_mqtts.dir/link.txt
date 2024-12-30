@@ -1,0 +1,2 @@
+/home/santos/esp5.1.2/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-ar qc libmqtts.a CMakeFiles/__idf_mqtts.dir/mqtts_main.c.obj
+/home/santos/esp5.1.2/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-ranlib libmqtts.a

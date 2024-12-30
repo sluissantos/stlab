@@ -1,0 +1,6792 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048ede
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 30 2024 16:32:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 otadata          OTA data         01 00 00009000 00002000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000b000 00005000[0m
+[0;32mI (80) boot:  2 ota_0            OTA app          00 10 00010000 001f0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 00200000 001f0000[0m
+[0;32mI (94) boot:  4 nvs              WiFi data        01 02 003f0000 00010000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e298h ( 58008) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e2c0 vaddr=3fc93600 size=01d58h (  7512) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2ea7ch (191100) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=0004eaa4 vaddr=3fc95358 size=00ddch (  3548) load[0m
+[0;32mI (167) esp_image: segment 4: paddr=0004f888 vaddr=40374000 size=0f540h ( 62784) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (204) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     revolog5g[0m
+[0;32mI (230) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Dec 30 2024 16:39:51[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  fadccf2cb2c52b24...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (252) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FC98A00 len 00050D10 (323 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (286) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (300) spi_flash: detected chip: gd[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;32mI (307) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (314) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (321) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (326) coexist: coexist rom version e7ae62f[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) STORAGE: Initializing...[0m
+[0;32mI (376) XPOWER: Using ESP-IDF Driver interface.[0m
+[0;32mI (376) XPOWER: getID:0x4a[0m
+[0;32mI (1376) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1426) MODEM: .AT
+[0m
+[0;32mI (1526) MODEM: AT
+OK
+[0m
+[0;32mI (1526) MODEM: Start modem successfully
+[0m
+[0;32mI (1576) MODEM: .AT+CPIN?
+[0m
+[0;32mI (1676) MODEM: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (1676) MODEM: SIM Card READY
+[0m
+[0;32mI (1726) MODEM: .AT+CNMP=51
+[0m
+[0;32mI (1826) MODEM: AT+CNMP=51
+OK
+[0m
+[0;32mI (1826) MODEM: Set network mode successfully
+[0m
+[0;32mI (1876) MODEM: .AT+CMNB=1
+[0m
+[0;32mI (1976) MODEM: AT+CMNB=1
+OK
+[0m
+[0;32mI (1976) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (2026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (2126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (2176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (2276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (2276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (3326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (3426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (3476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (3576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (3576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (4626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (4726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (4776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (4876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (4876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (5926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (6026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (6076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (6176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (6176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (7226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (7326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (7376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (7476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (7476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (8526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (8626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (8676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (8776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (8776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (9826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (9926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (9976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (10076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (10076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (11126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (11226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (11276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (11376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (11376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (12426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (12526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (12576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (12676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (12676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (13726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (13826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (13876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (13976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (13976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (15026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (15126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (15176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (15276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (15276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (16326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (16426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (16476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (16576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (16576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (17626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (17726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (17776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (17876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (17876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (18926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (19026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (19076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (19176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (19176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (20226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (20326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (20376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (20476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (20476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (21526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (21626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (21676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (21776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (21776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (22826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (22926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (22976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (23076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (23076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (24126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (24226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (24276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (24376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (24376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (25426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (25526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (25576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (25676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (25676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (26726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (26826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (26876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (26976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (26976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (28026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (28126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (28176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (28276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (28276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (29326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (29426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (29476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (29576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (29576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (30626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (30726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (30776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (30876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (30876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (31926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (32026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (32076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (32176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (32176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (33226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (33326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (33376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (33476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (33476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (34526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (34626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (34676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (34776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (34776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (35826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (35926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (35976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (36076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (36076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (37126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (37226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (37276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (37376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (37376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (38426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (38526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (38576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (38676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (38676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (39726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (39826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (39876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (39976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (39976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (41026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (41126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (41176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (41276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (41276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (42326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (42426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (42476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (42576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (42576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (43626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (43726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (43776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (43876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (43876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (44926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (45026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (45076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (45176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (45176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (46226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (46326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (46376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (46476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (46476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (47526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (47626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (47676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (47776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (47776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (48826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (48926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (48976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (49076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (49076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (50126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (50226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (50276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (50376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (50376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (51426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (51526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (51576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (51676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (51676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (52726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (52826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (52876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (52976) MODEM: AT+CGREG?
++CGREG: 0,1
+
+OK
+[0m
+[0;32mI (52976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (54026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (54126) MODEM: AT+CEREG?
++CEREG: 0,1
+
+OK
+[0m
+[0;32mI (54126) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (54176) MODEM: .AT+CGATT?
+[0m
+[0;32mI (54276) MODEM: AT+CGATT?
++CGATT: 1
+
+OK
+[0m
+[0;32mI (54276) MODEM: Attached from GPRS service sucessfully[0m
+[0;32mI (54326) MODEM: .AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+[0m
+[0;32mI (54426) MODEM: AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+OK
+[0m
+[0;32mI (54426) MODEM: PDP context sucessfully[0m
+[0;32mI (54476) MODEM: .AT+CNACT?
+[0m
+[0;32mI (54576) MODEM: AT+CNACT?
++CNACT: 0,0,"0.0.0.0"
++CNACT: 1,0,"0.0.0.0"
++CNACT: 2,0,"0.0.0.0"
++CNACT: 3,0,"0.0.0.0"
+
+OK
+[0m
+[0;32mI (54626) MODEM: .AT+CNACT=0,1
+[0m
+[0;32mI (54726) MODEM: AT+CNACT=0,1
+OK
+
++APP PDP: 0,ACTIVE
+[0m
+[0;32mI (54726) MODEM: App network active sucessfully[0m
+[0;32mI (54726) MODEM: GPRS status : connected
+[0m
+[0;32mI (54776) MODEM: .AT+CGNAPN
+[0m
+[0;32mI (54876) MODEM: AT+CGNAPN
++CGNAPN: 1,"smart.m2m.vivo.com.br"
+
+OK
+[0m
+[0;32mI (54876) MODEM: Get network mode successfully
+[0m
+[0;32mI (54926) MODEM: .AT+GSN
+[0m
+[0;32mI (55026) MODEM: AT+GSN
+860016047408716
+
+OK
+[0m
+[0;32mI (55026) MODEM: Get IMEI sucessfully[0m
+[0;32mI (55026) MODEM: IMEI = 860016047408716[0m
+[0;32mI (55076) MODEM: .AT+SMDISC
+[0m
+[0;32mI (55176) MODEM: AT+SMDISC
+ERROR
+[0m
+[0;32mI (55176) MQTT: MQTT disconnected unsuccessfully
+[0m
+[0;32mI (56226) MODEM: .AT+SMCONF="CLIENTID","860016047408716"
+[0m
+[0;32mI (56326) MODEM: AT+SMCONF="CLIENTID","860016047408716"
+OK
+[0m
+[0;32mI (56376) MODEM: .AT+SMCONF="URL","gwqa.revolog.com.br",1884
+[0m
+[0;32mI (56476) MODEM: AT+SMCONF="URL","gwqa.revolog.com.br",1884
+OK
+[0m
+[0;32mI (56526) MODEM: .AT+SMCONF="USERNAME","tecnologia"
+[0m
+[0;32mI (56626) MODEM: AT+SMCONF="USERNAME","tecnologia"
+OK
+[0m
+[0;32mI (56676) MODEM: .AT+SMCONF="PASSWORD","128Parsecs!"
+[0m
+[0;32mI (56776) MODEM: AT+SMCONF="PASSWORD","128Parsecs!"
+OK
+[0m
+[0;32mI (56826) MODEM: .AT+SMCONF="CLEANSS",0
+[0m
+[0;32mI (56926) MODEM: AT+SMCONF="CLEANSS",0
+OK
+[0m
+[0;32mI (56976) MODEM: .AT+SMCONF="QOS",0
+[0m
+[0;32mI (57076) MODEM: AT+SMCONF="QOS",0
+OK
+[0m
+[0;32mI (57126) MODEM: .AT+SMCONF="RETAIN",0
+[0m
+[0;32mI (57226) MODEM: AT+SMCONF="RETAIN",0
+OK
+[0m
+[0;32mI (57276) MODEM: .AT+SMCONF="KEEPTIME",600
+[0m
+[0;32mI (57376) MODEM: AT+SMCONF="KEEPTIME",600
+OK
+[0m
+[0;32mI (57426) MODEM: .AT+SMCONF?
+[0m
+[0;32mI (57526) MODEM: AT+SMCONF?
++SMCONF: 
+CLIENTID: "860016047408716"
+URL: "gwqa.revolog.com.br",1884
+KEEPTIME: 600
+USERNAME: "tecnologia"
+PASSWORD: "128Parsecs!"
+CLEANSS: 0
+QOS: 0
+TOPIC: ""
+MESSAGE: ""
+RETAIN: 0
+SUBHEX: 0
+ASYNCMODE: 0
+MESSAGELEN: 0
+
+OK
+[0m
+[0;32mI (57586) MODEM: .AT+SMCONN
+[0m
+[0;32mI (57686) MODEM: AT+SMCONN[0m
+[0;32mI (57686) MQTT: MQTT Client no connected[0m
+[0;32mI (58736) MODEM: .AT+SMCONN
+[0m
+[0;32mI (58836) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (58836) MQTT: MQTT Client no connected[0m
+[0;32mI (59886) MODEM: .AT+SMCONN
+[0m
+[0;32mI (59986) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (59986) MQTT: MQTT Client no connected[0m
+[0;32mI (61036) MODEM: .AT+SMCONN
+[0m
+[0;32mI (61146) MODEM: 
+ERROR
+[0m
+[0;32mI (61146) MQTT: MQTT Client no connected[0m
+[0;32mI (62196) MODEM: .AT+SMCONN
+[0m
+[0;32mI (62296) MODEM: AT+SMCONN[0m
+[0;32mI (62296) MQTT: MQTT Client no connected[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375898
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Dec 30 2024 16:32:50[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 otadata          OTA data         01 00 00009000 00002000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000b000 00005000[0m
+[0;32mI (79) boot:  2 ota_0            OTA app          00 10 00010000 001f0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 00200000 001f0000[0m
+[0;32mI (94) boot:  4 nvs              WiFi data        01 02 003f0000 00010000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e298h ( 58008) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e2c0 vaddr=3fc93600 size=01d58h (  7512) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2ea7ch (191100) map[0m
+[0;32mI (165) esp_image: segment 3: paddr=0004eaa4 vaddr=3fc95358 size=00ddch (  3548) load[0m
+[0;32mI (167) esp_image: segment 4: paddr=0004f888 vaddr=40374000 size=0f540h ( 62784) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     revolog5g[0m
+[0;32mI (230) cpu_start: App version:      1[0m
+[0;32mI (234) cpu_start: Compile time:     Dec 30 2024 16:39:51[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  fadccf2cb2c52b24...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (252) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FC98A00 len 00050D10 (323 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (286) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (299) spi_flash: detected chip: gd[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;32mI (307) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (313) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (321) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (326) coexist: coexist rom version e7ae62f[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) STORAGE: Initializing...[0m
+[0;32mI (376) XPOWER: Using ESP-IDF Driver interface.[0m
+[0;32mI (376) XPOWER: getID:0x4a[0m
+[0;32mI (1376) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1426) MODEM: .AT
+[0m
+[0;32mI (2426) MODEM: .AT
+[0m
+[0;32mI (3426) MODEM: .AT
+[0m
+[0;32mI (3626) MODEM: 
+SMS Ready
+[0m
+[0;32mI (3626) MODEM: Start modem unsuccessfully
+[0m
+[0;32mI (3676) MODEM: .AT+CPIN?
+[0m
+[0;32mI (3776) MODEM: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (3776) MODEM: SIM Card READY
+[0m
+[0;32mI (3826) MODEM: .AT+CNMP=51
+[0m
+[0;32mI (3926) MODEM: AT+CNMP=51
+OK
+[0m
+[0;32mI (3926) MODEM: Set network mode successfully
+[0m
+[0;32mI (3976) MODEM: .AT+CMNB=1
+[0m
+[0;32mI (4076) MODEM: AT+CMNB=1
+OK
+[0m
+[0;32mI (4076) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (4126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (4226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (4276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (4376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (4376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (5426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (5526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (5576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (5676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (5676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (6726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (6826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (6876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (6976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (6976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (8026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (8126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (8176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (8276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (8276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (9326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (9426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (9476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (9576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (9576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (10626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (10726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (10776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (10876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (10876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (11926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (12026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (12076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (12176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (12176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (13226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (13326) MODEM: AT+CEREG?
++CEREG: 0,1
+
+OK
+[0m
+[0;32mI (13326) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (13376) MODEM: .AT+CGATT?
+[0m
+[0;32mI (13476) MODEM: AT+CGATT?
++CGATT: 1
+
+OK
+[0m
+[0;32mI (13476) MODEM: Attached from GPRS service sucessfully[0m
+[0;32mI (13526) MODEM: .AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+[0m
+[0;32mI (13626) MODEM: AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+OK
+[0m
+[0;32mI (13626) MODEM: PDP context sucessfully[0m
+[0;32mI (13676) MODEM: .AT+CNACT?
+[0m
+[0;32mI (13776) MODEM: AT+CNACT?
++CNACT: 0,0,"0.0.0.0"
++CNACT: 1,0,"0.0.0.0"
++CNACT: 2,0,"0.0.0.0"
++CNACT: 3,0,"0.0.0.0"
+
+OK
+[0m
+[0;32mI (13826) MODEM: .AT+CNACT=0,1
+[0m
+[0;32mI (13926) MODEM: AT+CNACT=0,1
+OK
+
++APP PDP: 0,ACTIVE
+[0m
+[0;32mI (13926) MODEM: App network active sucessfully[0m
+[0;32mI (13926) MODEM: GPRS status : connected
+[0m
+[0;32mI (13976) MODEM: .AT+CGNAPN
+[0m
+[0;32mI (14076) MODEM: AT+CGNAPN
++CGNAPN: 1,"smart.m2m.vivo.com.br"
+
+OK
+[0m
+[0;32mI (14076) MODEM: Get network mode successfully
+[0m
+[0;32mI (14126) MODEM: .AT+GSN
+[0m
+[0;32mI (14226) MODEM: AT+GSN
+860016047408716
+
+OK
+[0m
+[0;32mI (14226) MODEM: Get IMEI sucessfully[0m
+[0;32mI (14226) MODEM: IMEI = 860016047408716[0m
+[0;32mI (14276) MODEM: .AT+SMDISC
+[0m
+[0;32mI (14376) MODEM: AT+SMDISC
+ERROR
+[0m
+[0;32mI (14376) MQTT: MQTT disconnected unsuccessfully
+[0m
+[0;32mI (15426) MODEM: .AT+SMCONF="CLIENTID","860016047408716"
+[0m
+[0;32mI (15526) MODEM: AT+SMCONF="CLIENTID","860016047408716"
+OK
+[0m
+[0;32mI (15576) MODEM: .AT+SMCONF="URL","gwqa.revolog.com.br",1884
+[0m
+[0;32mI (15676) MODEM: AT+SMCONF="URL","gwqa.revolog.com.br",1884
+OK
+[0m
+[0;32mI (15726) MODEM: .AT+SMCONF="USERNAME","tecnologia"
+[0m
+[0;32mI (15826) MODEM: AT+SMCONF="USERNAME","tecnologia"
+OK
+[0m
+[0;32mI (15876) MODEM: .AT+SMCONF="PASSWORD","128Parsecs!"
+[0m
+[0;32mI (15976) MODEM: AT+SMCONF="PASSWORD","128Parsecs!"
+OK
+[0m
+[0;32mI (16026) MODEM: .AT+SMCONF="CLEANSS",0
+[0m
+[0;32mI (16126) MODEM: AT+SMCONF="CLEANSS",0
+OK
+[0m
+[0;32mI (16176) MODEM: .AT+SMCONF="QOS",0
+[0m
+[0;32mI (16276) MODEM: AT+SMCONF="QOS",0
+OK
+[0m
+[0;32mI (16326) MODEM: .AT+SMCONF="RETAIN",0
+[0m
+[0;32mI (16426) MODEM: AT+SMCONF="RETAIN",0
+OK
+[0m
+[0;32mI (16476) MODEM: .AT+SMCONF="KEEPTIME",600
+[0m
+[0;32mI (16576) MODEM: AT+SMCONF="KEEPTIME",600
+OK
+[0m
+[0;32mI (16626) MODEM: .AT+SMCONF?
+[0m
+[0;32mI (16726) MODEM: AT+SMCONF?
++SMCONF: 
+CLIENTID: "860016047408716"
+URL: "gwqa.revolog.com.br",1884
+KEEPTIME: 600
+USERNAME: "tecnologia"
+PASSWORD: "128Parsecs!"
+CLEANSS: 0
+QOS: 0
+TOPIC: ""
+MESSAGE: ""
+RETAIN: 0
+SUBHEX: 0
+ASYNCMODE: 0
+MESSAGELEN: 0
+
+OK
+[0m
+[0;32mI (16786) MODEM: .AT+SMCONN
+[0m
+[0;32mI (16886) MODEM: AT+SMCONN[0m
+[0;32mI (16886) MQTT: MQTT Client no connected[0m
+[0;32mI (17936) MODEM: .AT+SMCONN
+[0m
+[0;32mI (18036) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (18036) MQTT: MQTT Client no connected[0m
+[0;32mI (19086) MODEM: .AT+SMCONN
+[0m
+[0;32mI (19186) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (19186) MQTT: MQTT Client no connected[0m
+[0;32mI (20236) MODEM: .AT+SMCONN
+[0m
+[0;32mI (20336) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (20336) MQTT: MQTT Client no connected[0m
+[0;32mI (21386) MODEM: .AT+SMCONN
+[0m
+[0;32mI (21486) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (21486) MQTT: MQTT Client no connected[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375898
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Dec 30 2024 16:32:50[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 otadata          OTA data         01 00 00009000 00002000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000b000 00005000[0m
+[0;32mI (79) boot:  2 ota_0            OTA app          00 10 00010000 001f0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 00200000 001f0000[0m
+[0;32mI (94) boot:  4 nvs              WiFi data        01 02 003f0000 00010000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e298h ( 58008) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e2c0 vaddr=3fc93600 size=01d58h (  7512) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2ea7ch (191100) map[0m
+[0;32mI (165) esp_image: segment 3: paddr=0004eaa4 vaddr=3fc95358 size=00ddch (  3548) load[0m
+[0;32mI (167) esp_image: segment 4: paddr=0004f888 vaddr=40374000 size=0f540h ( 62784) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     revolog5g[0m
+[0;32mI (230) cpu_start: App version:      1[0m
+[0;32mI (234) cpu_start: Compile time:     Dec 30 2024 16:39:51[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  fadccf2cb2c52b24...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (252) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FC98A00 len 00050D10 (323 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (286) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (299) spi_flash: detected chip: gd[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;32mI (307) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (313) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (321) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (326) coexist: coexist rom version e7ae62f[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) STORAGE: Initializing...[0m
+[0;32mI (376) XPOWER: Using ESP-IDF Driver interface.[0m
+[0;32mI (376) XPOWER: getID:0x4a[0m
+[0;32mI (1376) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1426) MODEM: .AT
+[0m
+[0;32mI (2426) MODEM: .AT
+[0m
+[0;32mI (3426) MODEM: .AT
+[0m
+[0;32mI (3626) MODEM: 
+SMS Ready
+[0m
+[0;32mI (3626) MODEM: Start modem unsuccessfully
+[0m
+[0;32mI (3676) MODEM: .AT+CPIN?
+[0m
+[0;32mI (3776) MODEM: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (3776) MODEM: SIM Card READY
+[0m
+[0;32mI (3826) MODEM: .AT+CNMP=51
+[0m
+[0;32mI (3926) MODEM: AT+CNMP=51
+OK
+[0m
+[0;32mI (3926) MODEM: Set network mode successfully
+[0m
+[0;32mI (3976) MODEM: .AT+CMNB=1
+[0m
+[0;32mI (4076) MODEM: AT+CMNB=1
+OK
+[0m
+[0;32mI (4076) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (4126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (4226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (4276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (4376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (4376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (5426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (5526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (5576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (5676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (5676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (6726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (6826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (6876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (6976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (6976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (8026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (8126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (8176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (8276) MODEM: AT+CGREG?
++CGREG: 0,1
+
+OK
+[0m
+[0;32mI (8276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (9326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (9426) MODEM: AT+CEREG?
++CEREG: 0,1
+
+OK
+[0m
+[0;32mI (9426) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (9476) MODEM: .AT+CGATT?
+[0m
+[0;32mI (9576) MODEM: AT+CGATT?
++CGATT: 1
+
+OK
+[0m
+[0;32mI (9576) MODEM: Attached from GPRS service sucessfully[0m
+[0;32mI (9626) MODEM: .AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+[0m
+[0;32mI (9726) MODEM: AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+OK
+[0m
+[0;32mI (9726) MODEM: PDP context sucessfully[0m
+[0;32mI (9776) MODEM: .AT+CNACT?
+[0m
+[0;32mI (9876) MODEM: AT+CNACT?
++CNACT: 0,0,"0.0.0.0"
++CNACT: 1,0,"0.0.0.0"
++CNACT: 2,0,"0.0.0.0"
++CNACT: 3,0,"0.0.0.0"
+
+OK
+[0m
+[0;32mI (9926) MODEM: .AT+CNACT=0,1
+[0m
+[0;32mI (10026) MODEM: AT+CNACT=0,1
+OK
+
++APP PDP: 0,ACTIVE
+[0m
+[0;32mI (10026) MODEM: App network active sucessfully[0m
+[0;32mI (10026) MODEM: GPRS status : connected
+[0m
+[0;32mI (10076) MODEM: .AT+CGNAPN
+[0m
+[0;32mI (10176) MODEM: AT+CGNAPN
++CGNAPN: 1,"smart.m2m.vivo.com.br"
+
+OK
+[0m
+[0;32mI (10176) MODEM: Get network mode successfully
+[0m
+[0;32mI (10226) MODEM: .AT+GSN
+[0m
+[0;32mI (10326) MODEM: AT+GSN
+860016047408716
+
+OK
+[0m
+[0;32mI (10326) MODEM: Get IMEI sucessfully[0m
+[0;32mI (10326) MODEM: IMEI = 860016047408716[0m
+[0;32mI (10376) MODEM: .AT+SMDISC
+[0m
+[0;32mI (10476) MODEM: AT+SMDISC
+ERROR
+[0m
+[0;32mI (10476) MQTT: MQTT disconnected unsuccessfully
+[0m
+[0;32mI (11526) MODEM: .AT+SMCONF="CLIENTID","860016047408716"
+[0m
+[0;32mI (11626) MODEM: AT+SMCONF="CLIENTID","860016047408716"
+OK
+[0m
+[0;32mI (11676) MODEM: .AT+SMCONF="URL","gwqa.revolog.com.br",1884
+[0m
+[0;32mI (11776) MODEM: AT+SMCONF="URL","gwqa.revolog.com.br",1884
+OK
+[0m
+[0;32mI (11826) MODEM: .AT+SMCONF="USERNAME","tecnologia"
+[0m
+[0;32mI (11926) MODEM: AT+SMCONF="USERNAME","tecnologia"
+OK
+[0m
+[0;32mI (11976) MODEM: .AT+SMCONF="PASSWORD","128Parsecs!"
+[0m
+[0;32mI (12076) MODEM: AT+SMCONF="PASSWORD","128Parsecs!"
+OK
+[0m
+[0;32mI (12126) MODEM: .AT+SMCONF="CLEANSS",0
+[0m
+[0;32mI (12226) MODEM: AT+SMCONF="CLEANSS",0
+OK
+[0m
+[0;32mI (12276) MODEM: .AT+SMCONF="QOS",0
+[0m
+[0;32mI (12376) MODEM: AT+SMCONF="QOS",0
+OK
+[0m
+[0;32mI (12426) MODEM: .AT+SMCONF="RETAIN",0
+[0m
+[0;32mI (12526) MODEM: AT+SMCONF="RETAIN",0
+OK
+[0m
+[0;32mI (12576) MODEM: .AT+SMCONF="KEEPTIME",600
+[0m
+[0;32mI (12676) MODEM: AT+SMCONF="KEEPTIME",600
+OK
+[0m
+[0;32mI (12726) MODEM: .AT+SMCONF?
+[0m
+[0;32mI (12826) MODEM: AT+SMCONF?
++SMCONF: 
+CLIENTID: "860016047408716"
+URL: "gwqa.revolog.com.br",1884
+KEEPTIME: 600
+USERNAME: "tecnologia"
+PASSWORD: "128Parsecs!"
+CLEANSS: 0
+QOS: 0
+TOPIC: ""
+MESSAGE: ""
+RETAIN: 0
+SUBHEX: 0
+ASYNCMODE: 0
+MESSAGELEN: 0
+
+OK
+[0m
+[0;32mI (12886) MODEM: .AT+SMCONN
+[0m
+[0;32mI (12986) MODEM: AT+SMCONN[0m
+[0;32mI (12986) MQTT: MQTT Client no connected[0m
+[0;32mI (14036) MODEM: .AT+SMCONN
+[0m
+[0;32mI (14136) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (14136) MQTT: MQTT Client no connected[0m
+[0;32mI (15186) MODEM: .AT+SMCONN
+[0m
+[0;32mI (15286) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (15286) MQTT: MQTT Client no connected[0m
+[0;32mI (16336) MODEM: .AT+SMCONN
+[0m
+[0;32mI (16436) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (16436) MQTT: MQTT Client no connected[0m
+[0;32mI (17486) MODEM: .AT+SMCONN
+[0m
+[0;32mI (17586) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (17586) MQTT: MQTT Client no connected[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375898
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Dec 30 2024 16:32:50[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 otadata          OTA data         01 00 00009000 00002000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000b000 00005000[0m
+[0;32mI (79) boot:  2 ota_0            OTA app          00 10 00010000 001f0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 00200000 001f0000[0m
+[0;32mI (94) boot:  4 nvs              WiFi data        01 02 003f0000 00010000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e298h ( 58008) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e2c0 vaddr=3fc93600 size=01d58h (  7512) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2ea7ch (191100) map[0m
+[0;32mI (165) esp_image: segment 3: paddr=0004eaa4 vaddr=3fc95358 size=00ddch (  3548) load[0m
+[0;32mI (167) esp_image: segment 4: paddr=0004f888 vaddr=40374000 size=0f540h ( 62784) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     revolog5g[0m
+[0;32mI (230) cpu_start: App version:      1[0m
+[0;32mI (234) cpu_start: Compile time:     Dec 30 2024 16:39:51[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  fadccf2cb2c52b24...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (252) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FC98A00 len 00050D10 (323 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (286) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (299) spi_flash: detected chip: gd[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;32mI (307) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (313) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (321) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (326) coexist: coexist rom version e7ae62f[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) STORAGE: Initializing...[0m
+[0;32mI (376) XPOWER: Using ESP-IDF Driver interface.[0m
+[0;32mI (376) XPOWER: getID:0x4a[0m
+[0;32mI (1376) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1426) MODEM: .AT
+[0m
+[0;32mI (2426) MODEM: .AT
+[0m
+[0;32mI (3426) MODEM: .AT
+[0m
+[0;32mI (3626) MODEM: 
+SMS Ready
+[0m
+[0;32mI (3626) MODEM: Start modem unsuccessfully
+[0m
+[0;32mI (3676) MODEM: .AT+CPIN?
+[0m
+[0;32mI (3776) MODEM: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (3776) MODEM: SIM Card READY
+[0m
+[0;32mI (3826) MODEM: .AT+CNMP=51
+[0m
+[0;32mI (3926) MODEM: AT+CNMP=51
+OK
+[0m
+[0;32mI (3926) MODEM: Set network mode successfully
+[0m
+[0;32mI (3976) MODEM: .AT+CMNB=1
+[0m
+[0;32mI (4076) MODEM: AT+CMNB=1
+OK
+[0m
+[0;32mI (4076) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (4126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (4226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (4276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (4376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (4376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (5426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (5526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (5576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (5676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (5676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (6726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (6826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (6876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (6976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (6976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (8026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (8126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (8176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (8276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (8276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (9326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (9426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (9476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (9576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (9576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (10626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (10726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (10776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (10876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (10876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (11926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (12026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (12076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (12176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (12176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (13226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (13326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (13376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (13476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (13476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (14526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (14626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (14676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (14776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (14776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (15826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (15926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (15976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (16076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (16076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (17126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (17226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (17276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (17376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (17376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (18426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (18526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (18576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (18676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (18676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (19726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (19826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (19876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (19976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (19976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (21026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (21126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (21176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (21276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (21276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (22326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (22426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (22476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (22576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (22576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (23626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (23726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (23776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (23876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (23876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (24926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (25026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (25076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (25176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (25176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (26226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (26326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (26376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (26476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (26476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (27526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (27626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (27676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (27776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (27776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (28826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (28926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (28976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (29076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (29076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (30126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (30226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (30276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (30376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (30376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (31426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (31526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (31576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (31676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (31676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (32726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (32826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (32876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (32976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (32976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (34026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (34126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (34176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (34276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (34276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (35326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (35426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (35476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (35576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (35576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (36626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (36726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (36776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (36876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (36876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (37926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (38026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (38076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (38176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (38176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (39226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (39326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (39376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (39476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (39476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (40526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (40626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (40676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (40776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (40776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (41826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (41926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (41976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (42076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (42076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (43126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (43226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (43276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (43376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (43376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (44426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (44526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (44576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (44676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (44676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (45726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (45826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (45876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (45976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (45976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (47026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (47126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (47176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (47276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (47276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (48326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (48426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (48476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (48576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (48576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (49626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (49726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (49776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (49876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (49876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (50926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (51026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (51076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (51176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (51176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (52226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (52326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (52376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (52476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (52476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (53526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (53626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (53676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (53776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (53776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (54826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (54926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (54976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (55076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (55076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (56126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (56226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (56276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (56376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (56376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (57426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (57526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (57576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (57676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (57676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (58726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (58826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (58876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (58976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (58976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (60026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (60126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (60176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (60276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (60276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (61326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (61426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (61476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (61576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (61576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (62626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (62726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (62776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (62876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (62876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (63926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (64026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (64076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (64176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (64176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (65226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (65326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (65376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (65476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (65476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (66526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (66626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (66676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (66776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (66776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (67826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (67926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (67976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (68076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (68076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (69126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (69226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (69276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (69376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (69376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (70426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (70526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (70576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (70676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (70676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (71726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (71826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (71876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (71976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (71976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (73026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (73126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (73176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (73276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (73276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (74326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (74426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (74476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (74576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (74576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (75626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (75726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (75776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (75876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (75876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (76926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (77026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (77076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (77176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (77176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (78226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (78326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (78376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (78476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (78476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (79526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (79626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (79676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (79776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (79776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (80826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (80926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (80976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (81076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (81076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (82126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (82226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (82276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (82376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (82376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (83426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (83526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (83576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (83676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (83676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (84726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (84826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (84876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (84976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (84976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (86026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (86126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (86176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (86276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (86276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (87326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (87426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (87476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (87576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (87576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (88626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (88726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (88776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (88876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (88876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (89926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (90026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (90076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (90176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (90176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (91226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (91326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (91376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (91476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (91476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (92526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (92626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (92676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (92776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (92776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (93826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (93926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (93976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (94076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (94076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (95126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (95226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (95276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (95376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (95376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (96426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (96526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (96576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (96676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (96676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (97726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (97826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (97876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (97976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (97976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (99026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (99126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (99176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (99276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (99276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (100326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (100426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (100476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (100576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (100576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (101626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (101726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (101776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (101876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (101876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (102926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (103026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (103076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (103176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (103176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (104226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (104326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (104376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (104476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (104476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (105526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (105626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (105676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (105776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (105776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (106826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (106926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (106976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (107076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (107076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (108126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (108226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (108276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (108376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (108376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (109426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (109526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (109576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (109676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (109676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (110726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (110826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (110876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (110976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (110976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (112026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (112126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (112176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (112276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (112276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (113326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (113426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (113476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (113576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (113576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (114626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (114726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (114776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (114876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (114876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (115926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (116026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (116076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (116176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (116176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (117226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (117326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (117376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (117476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (117476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (118526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (118626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (118676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (118776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (118776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (119826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (119926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (119976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (120076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (120076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (121126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (121226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (121276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (121376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (121376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (122426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (122526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (122576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (122676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (122676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (123726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (123826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (123876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (123976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (123976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (125026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (125126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (125176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (125276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (125276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (126326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (126426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (126476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (126576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (126576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (127626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (127726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (127776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (127876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (127876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (128926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (129026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (129076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (129176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (129176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (130226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (130326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (130376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (130476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (130476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (131526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (131626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (131676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (131776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (131776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (132826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (132926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (132976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (133076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (133076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (134126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (134226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (134276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (134376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (134376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (135426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (135526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (135576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (135676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (135676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (136726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (136826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (136876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (136976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (136976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (138026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (138126) MODEM: AT+CEREG?
++CEREG: 0,1
+
+OK
+[0m
+[0;32mI (138126) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (138176) MODEM: .AT+CGATT?
+[0m
+[0;32mI (138276) MODEM: AT+CGATT?
++CGATT: 1
+
+OK
+[0m
+[0;32mI (138276) MODEM: Attached from GPRS service sucessfully[0m
+[0;32mI (138326) MODEM: .AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+[0m
+[0;32mI (138426) MODEM: AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+OK
+[0m
+[0;32mI (138426) MODEM: PDP context sucessfully[0m
+[0;32mI (138476) MODEM: .AT+CNACT?
+[0m
+[0;32mI (138576) MODEM: AT+CNACT?
++CNACT: 0,0,"0.0.0.0"
++CNACT: 1,0,"0.0.0.0"
++CNACT: 2,0,"0.0.0.0"
++CNACT: 3,0,"0.0.0.0"
+
+OK
+[0m
+[0;32mI (138626) MODEM: .AT+CNACT=0,1
+[0m
+[0;32mI (138726) MODEM: AT+CNACT=0,1
+OK
+
++APP PDP: 0,ACTIVE
+[0m
+[0;32mI (138726) MODEM: App network active sucessfully[0m
+[0;32mI (138726) MODEM: GPRS status : connected
+[0m
+[0;32mI (138776) MODEM: .AT+CGNAPN
+[0m
+[0;32mI (138876) MODEM: AT+CGNAPN
++CGNAPN: 1,"smart.m2m.vivo.com.br"
+
+OK
+[0m
+[0;32mI (138876) MODEM: Get network mode successfully
+[0m
+[0;32mI (138926) MODEM: .AT+GSN
+[0m
+[0;32mI (139026) MODEM: AT+GSN
+860016047408716
+
+OK
+[0m
+[0;32mI (139026) MODEM: Get IMEI sucessfully[0m
+[0;32mI (139026) MODEM: IMEI = 860016047408716[0m
+[0;32mI (139076) MODEM: .AT+SMDISC
+[0m
+[0;32mI (139176) MODEM: AT+SMDISC
+ERROR
+[0m
+[0;32mI (139176) MQTT: MQTT disconnected unsuccessfully
+[0m
+[0;32mI (140226) MODEM: .AT+SMCONF="CLIENTID","860016047408716"
+[0m
+[0;32mI (140326) MODEM: AT+SMCONF="CLIENTID","860016047408716"
+OK
+[0m
+[0;32mI (140376) MODEM: .AT+SMCONF="URL","gwqa.revolog.com.br",1884
+[0m
+[0;32mI (140476) MODEM: AT+SMCONF="URL","gwqa.revolog.com.br",1884
+OK
+[0m
+[0;32mI (140526) MODEM: .AT+SMCONF="USERNAME","tecnologia"
+[0m
+[0;32mI (140626) MODEM: AT+SMCONF="USERNAME","tecnologia"
+OK
+[0m
+[0;32mI (140676) MODEM: .AT+SMCONF="PASSWORD","128Parsecs!"
+[0m
+[0;32mI (140776) MODEM: AT+SMCONF="PASSWORD","128Parsecs!"
+OK
+[0m
+[0;32mI (140826) MODEM: .AT+SMCONF="CLEANSS",0
+[0m
+[0;32mI (140926) MODEM: AT+SMCONF="CLEANSS",0
+OK
+[0m
+[0;32mI (140976) MODEM: .AT+SMCONF="QOS",0
+[0m
+[0;32mI (141076) MODEM: AT+SMCONF="QOS",0
+OK
+[0m
+[0;32mI (141126) MODEM: .AT+SMCONF="RETAIN",0
+[0m
+[0;32mI (141226) MODEM: AT+SMCONF="RETAIN",0
+OK
+[0m
+[0;32mI (141276) MODEM: .AT+SMCONF="KEEPTIME",600
+[0m
+[0;32mI (141376) MODEM: AT+SMCONF="KEEPTIME",600
+OK
+[0m
+[0;32mI (141426) MODEM: .AT+SMCONF?
+[0m
+[0;32mI (141526) MODEM: AT+SMCONF?
++SMCONF: 
+CLIENTID: "860016047408716"
+URL: "gwqa.revolog.com.br",1884
+KEEPTIME: 600
+USERNAME: "tecnologia"
+PASSWORD: "128Parsecs!"
+CLEANSS: 0
+QOS: 0
+TOPIC: ""
+MESSAGE: ""
+RETAIN: 0
+SUBHEX: 0
+ASYNCMODE: 0
+MESSAGELEN: 0
+
+OK
+[0m
+[0;32mI (141586) MODEM: .AT+SMCONN
+[0m
+[0;32mI (141686) MODEM: AT+SMCONN[0m
+[0;32mI (141686) MQTT: MQTT Client no connected[0m
+[0;32mI (142736) MODEM: .AT+SMCONN
+[0m
+[0;32mI (142836) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (142836) MQTT: MQTT Client no connected[0m
+[0;32mI (143886) MODEM: .AT+SMCONN
+[0m
+[0;32mI (143986) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (143986) MQTT: MQTT Client no connected[0m
+[0;32mI (145036) MODEM: .AT+SMCONN
+[0m
+[0;32mI (145136) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (145136) MQTT: MQTT Client no connected[0m
+[0;32mI (146186) MODEM: .AT+SMCONN
+[0m
+[0;32mI (146286) MODEM: 
+ERROR
+AT+SMCONN[0m
+[0;32mI (146286) MQTT: MQTT Client no connected[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375898
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Dec 30 2024 16:32:50[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 otadata          OTA data         01 00 00009000 00002000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000b000 00005000[0m
+[0;32mI (79) boot:  2 ota_0            OTA app          00 10 00010000 001f0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 00200000 001f0000[0m
+[0;32mI (94) boot:  4 nvs              WiFi data        01 02 003f0000 00010000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e298h ( 58008) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001e2c0 vaddr=3fc93600 size=01d58h (  7512) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2ea7ch (191100) map[0m
+[0;32mI (165) esp_image: segment 3: paddr=0004eaa4 vaddr=3fc95358 size=00ddch (  3548) load[0m
+[0;32mI (167) esp_image: segment 4: paddr=0004f888 vaddr=40374000 size=0f540h ( 62784) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     revolog5g[0m
+[0;32mI (230) cpu_start: App version:      1[0m
+[0;32mI (234) cpu_start: Compile time:     Dec 30 2024 16:39:51[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  fadccf2cb2c52b24...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (252) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FC98A00 len 00050D10 (323 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (286) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (299) spi_flash: detected chip: gd[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;32mI (307) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (313) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (321) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (326) coexist: coexist rom version e7ae62f[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) STORAGE: Initializing...[0m
+[0;32mI (376) XPOWER: Using ESP-IDF Driver interface.[0m
+[0;32mI (376) XPOWER: getID:0x4a[0m
+[0;32mI (1376) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1426) MODEM: .AT
+[0m
+[0;32mI (2426) MODEM: .AT
+[0m
+[0;32mI (3426) MODEM: .AT
+[0m
+[0;32mI (3626) MODEM: 
+SMS Ready
+[0m
+[0;32mI (3626) MODEM: Start modem unsuccessfully
+[0m
+[0;32mI (3676) MODEM: .AT+CPIN?
+[0m
+[0;32mI (3776) MODEM: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (3776) MODEM: SIM Card READY
+[0m
+[0;32mI (3826) MODEM: .AT+CNMP=51
+[0m
+[0;32mI (3926) MODEM: AT+CNMP=51
+OK
+[0m
+[0;32mI (3926) MODEM: Set network mode successfully
+[0m
+[0;32mI (3976) MODEM: .AT+CMNB=1
+[0m
+[0;32mI (4076) MODEM: AT+CMNB=1
+OK
+[0m
+[0;32mI (4076) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (4126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (4226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (4276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (4376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (4376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (5426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (5526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (5576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (5676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (5676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (6726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (6826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (6876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (6976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (6976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (8026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (8126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (8176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (8276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (8276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (9326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (9426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (9476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (9576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (9576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (10626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (10726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (10776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (10876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (10876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (11926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (12026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (12076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (12176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (12176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (13226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (13326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (13376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (13476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (13476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (14526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (14626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (14676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (14776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (14776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (15826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (15926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (15976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (16076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (16076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (17126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (17226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (17276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (17376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (17376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (18426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (18526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (18576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (18676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (18676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (19726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (19826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (19876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (19976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (19976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (21026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (21126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (21176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (21276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (21276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (22326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (22426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (22476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (22576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (22576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (23626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (23726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (23776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (23876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (23876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (24926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (25026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (25076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (25176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (25176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (26226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (26326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (26376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (26476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (26476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (27526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (27626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (27676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (27776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (27776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (28826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (28926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (28976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (29076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (29076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (30126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (30226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (30276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (30376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (30376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (31426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (31526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (31576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (31676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (31676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (32726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (32826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (32876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (32976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (32976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (34026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (34126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (34176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (34276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (34276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (35326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (35426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (35476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (35576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (35576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (36626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (36726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (36776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (36876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (36876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (37926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (38026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (38076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (38176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (38176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (39226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (39326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (39376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (39476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (39476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (40526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (40626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (40676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (40776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (40776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (41826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (41926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (41976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (42076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (42076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (43126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (43226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (43276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (43376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (43376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (44426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (44526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (44576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (44676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (44676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (45726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (45826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (45876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (45976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (45976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (47026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (47126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (47176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (47276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (47276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (48326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (48426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (48476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (48576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (48576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (49626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (49726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (49776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (49876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (49876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (50926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (51026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (51076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (51176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (51176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (52226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (52326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (52376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (52476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (52476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (53526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (53626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (53676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (53776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (53776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (54826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (54926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (54976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (55076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (55076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (56126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (56226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (56276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (56376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (56376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (57426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (57526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (57576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (57676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (57676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (58726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (58826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (58876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (58976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (58976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (60026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (60126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (60176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (60276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (60276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (61326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (61426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (61476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (61576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (61576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (62626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (62726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (62776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (62876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (62876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (63926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (64026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (64076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (64176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (64176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (65226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (65326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (65376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (65476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (65476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (66526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (66626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (66676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (66776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (66776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (67826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (67926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (67976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (68076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (68076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (69126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (69226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (69276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (69376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (69376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (70426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (70526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (70576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (70676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (70676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (71726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (71826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (71876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (71976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (71976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (73026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (73126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (73176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (73276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (73276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (74326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (74426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (74476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (74576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (74576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (75626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (75726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (75776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (75876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (75876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (76926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (77026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (77076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (77176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (77176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (78226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (78326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (78376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (78476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (78476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (79526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (79626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (79676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (79776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (79776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (80826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (80926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (80976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (81076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (81076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (82126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (82226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (82276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (82376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (82376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (83426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (83526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (83576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (83676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (83676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (84726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (84826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (84876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (84976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (84976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (86026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (86126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (86176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (86276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (86276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (87326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (87426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (87476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (87576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (87576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (88626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (88726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (88776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (88876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (88876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (89926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (90026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (90076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (90176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (90176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (91226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (91326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (91376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (91476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (91476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (92526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (92626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (92676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (92776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (92776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (93826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (93926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (93976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (94076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (94076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (95126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (95226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (95276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (95376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (95376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (96426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (96526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (96576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (96676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (96676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (97726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (97826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (97876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (97976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (97976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (99026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (99126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (99176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (99276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (99276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (100326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (100426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (100476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (100576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (100576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (101626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (101726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (101776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (101876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (101876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (102926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (103026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (103076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (103176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (103176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (104226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (104326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (104376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (104476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (104476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (105526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (105626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (105676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (105776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (105776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (106826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (106926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (106976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (107076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (107076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (108126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (108226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (108276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (108376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (108376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (109426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (109526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (109576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (109676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (109676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (110726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (110826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (110876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (110976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (110976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (112026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (112126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (112176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (112276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (112276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (113326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (113426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (113476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (113576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (113576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (114626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (114726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (114776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (114876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (114876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (115926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (116026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (116076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (116176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (116176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (117226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (117326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (117376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (117476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (117476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (118526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (118626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (118676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (118776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (118776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (119826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (119926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (119976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (120076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (120076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (121126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (121226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (121276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (121376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (121376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (122426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (122526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (122576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (122676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (122676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (123726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (123826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (123876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (123976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (123976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (125026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (125126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (125176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (125276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (125276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (126326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (126426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (126476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (126576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (126576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (127626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (127726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (127776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (127876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (127876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (128926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (129026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (129076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (129176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (129176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (130226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (130326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (130376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (130476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (130476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (131526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (131626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (131676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (131776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (131776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (132826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (132926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (132976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (133076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (133076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (134126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (134226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (134276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (134376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (134376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (135426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (135526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (135576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (135676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (135676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (136726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (136826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (136876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (136976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (136976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (138026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (138126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (138176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (138276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (138276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (139326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (139426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (139476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (139576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (139576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (140626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (140726) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (140776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (140876) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (140876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (141926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (142026) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (142076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (142176) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (142176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (143226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (143326) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (143376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (143476) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (143476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (144526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (144626) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (144676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (144776) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (144776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (145826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (145926) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (145976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (146076) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (146076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (147126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (147226) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (147276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (147376) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (147376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (148426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (148526) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (148576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (148676) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (148676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (149726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (149826) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (149876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (149976) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (149976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (151026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (151126) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (151176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (151276) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (151276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (152326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (152426) MODEM: AT+CEREG?
++CEREG: 0,3
+
+OK
+[0m
+[0;32mI (152476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (152576) MODEM: AT+CGREG?
++CGREG: 0,3
+
+OK
+[0m
+[0;32mI (152576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (153626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (153726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (153776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (153876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (153876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (154926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (155026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (155076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (155176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (155176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (156226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (156326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (156376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (156476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (156476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (157526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (157626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (157676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (157776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (157776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (158826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (158926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (158976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (159076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (159076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (160126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (160226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (160276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (160376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (160376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (161426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (161526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (161576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (161676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (161676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (162726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (162826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (162876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (162976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (162976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (164026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (164126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (164176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (164276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (164276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (165326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (165426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (165476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (165576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (165576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (166626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (166726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (166776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (166876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (166876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (167926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (168026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (168076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (168176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (168176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (169226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (169326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (169376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (169476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (169476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (170526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (170626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (170676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (170776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (170776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (171826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (171926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (171976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (172076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (172076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (173126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (173226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (173276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (173376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (173376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (174426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (174526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (174576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (174676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (174676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (175726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (175826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (175876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (175976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (175976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (177026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (177126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (177176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (177276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (177276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (178326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (178426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (178476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (178576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (178576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (179626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (179726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (179776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (179876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (179876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (180926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (181026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (181076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (181176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (181176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (182226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (182326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (182376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (182476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (182476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (183526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (183626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (183676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (183776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (183776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (184826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (184926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (184976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (185076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (185076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (186126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (186226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (186276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (186376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (186376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (187426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (187526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (187576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (187676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (187676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (188726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (188826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (188876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (188976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (188976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (190026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (190126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (190176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (190276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (190276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (191326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (191426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (191476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (191576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (191576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (192626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (192726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (192776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (192876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (192876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (193926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (194026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (194076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (194176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (194176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (195226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (195326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (195376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (195476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (195476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (196526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (196626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (196676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (196776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (196776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (197826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (197926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (197976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (198076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (198076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (199126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (199226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (199276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (199376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (199376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (200426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (200526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (200576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (200676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (200676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (201726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (201826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (201876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (201976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (201976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (203026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (203126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (203176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (203276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (203276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (204326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (204426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (204476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (204576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (204576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (205626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (205726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (205776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (205876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (205876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (206926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (207026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (207076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (207176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (207176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (208226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (208326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (208376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (208476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (208476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (209526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (209626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (209676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (209776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (209776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (210826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (210926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (210976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (211076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (211076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (212126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (212226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (212276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (212376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (212376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (213426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (213526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (213576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (213676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (213676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (214726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (214826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (214876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (214976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (214976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (216026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (216126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (216176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (216276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (216276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (217326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (217426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (217476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (217576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (217576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (218626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (218726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (218776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (218876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (218876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (219926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (220026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (220076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (220176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (220176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (221226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (221326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (221376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (221476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (221476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (222526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (222626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (222676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (222776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (222776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (223826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (223926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (223976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (224076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (224076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (225126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (225226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (225276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (225376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (225376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (226426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (226526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (226576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (226676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (226676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (227726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (227826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (227876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (227976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (227976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (229026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (229126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (229176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (229276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (229276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (230326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (230426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (230476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (230576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (230576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (231626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (231726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (231776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (231876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (231876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (232926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (233026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (233076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (233176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (233176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (234226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (234326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (234376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (234476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (234476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (235526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (235626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (235676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (235776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (235776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (236826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (236926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (236976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (237076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (237076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (238126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (238226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (238276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (238376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (238376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (239426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (239526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (239576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (239676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (239676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (240726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (240826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (240876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (240976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (240976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (242026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (242126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (242176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (242276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (242276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (243326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (243426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (243476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (243576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (243576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (244626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (244726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (244776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (244876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (244876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (245926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (246026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (246076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (246176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (246176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (247226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (247326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (247376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (247476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (247476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (248526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (248626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (248676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (248776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (248776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (249826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (249926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (249976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (250076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (250076) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (251126) MODEM: .AT+CEREG?
+[0m
+[0;32mI (251226) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (251276) MODEM: .AT+CGREG?
+[0m
+[0;32mI (251376) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (251376) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (252426) MODEM: .AT+CEREG?
+[0m
+[0;32mI (252526) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (252576) MODEM: .AT+CGREG?
+[0m
+[0;32mI (252676) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (252676) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (253726) MODEM: .AT+CEREG?
+[0m
+[0;32mI (253826) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (253876) MODEM: .AT+CGREG?
+[0m
+[0;32mI (253976) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (253976) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (255026) MODEM: .AT+CEREG?
+[0m
+[0;32mI (255126) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (255176) MODEM: .AT+CGREG?
+[0m
+[0;32mI (255276) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (255276) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (256326) MODEM: .AT+CEREG?
+[0m
+[0;32mI (256426) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (256476) MODEM: .AT+CGREG?
+[0m
+[0;32mI (256576) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (256576) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (257626) MODEM: .AT+CEREG?
+[0m
+[0;32mI (257726) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (257776) MODEM: .AT+CGREG?
+[0m
+[0;32mI (257876) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (257876) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (258926) MODEM: .AT+CEREG?
+[0m
+[0;32mI (259026) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (259076) MODEM: .AT+CGREG?
+[0m
+[0;32mI (259176) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (259176) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (260226) MODEM: .AT+CEREG?
+[0m
+[0;32mI (260326) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (260376) MODEM: .AT+CGREG?
+[0m
+[0;32mI (260476) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (260476) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (261526) MODEM: .AT+CEREG?
+[0m
+[0;32mI (261626) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (261676) MODEM: .AT+CGREG?
+[0m
+[0;32mI (261776) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (261776) MODEM: Set preferred mode unsuccessfully
+[0m
+[0;32mI (262826) MODEM: .AT+CEREG?
+[0m
+[0;32mI (262926) MODEM: AT+CEREG?
++CEREG: 0,2
+
+OK
+[0m
+[0;32mI (262976) MODEM: .AT+CGREG?
+[0m
+[0;32mI (263076) MODEM: AT+CGREG?
++CGREG: 0,2
+
+OK
+[0m
+[0;32mI (263076) MODEM: Set preferred mode unsuccessfully
+[0m

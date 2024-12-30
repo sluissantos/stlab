@@ -1,0 +1,1539 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 30 2024 16:32:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 otadata          OTA data         01 00 00009000 00002000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000b000 00005000[0m
+[0;32mI (80) boot:  2 ota_0            OTA app          00 10 00010000 001f0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 00200000 001f0000[0m
+[0;32mI (94) boot:  4 nvs              WiFi data        01 02 003f0000 00010000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d5b0h ( 54704) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001d5d8 vaddr=3fc93600 size=02a40h ( 10816) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=24838h (149560) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=00044860 vaddr=3fc96040 size=00094h (   148) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=000448fc vaddr=40374000 size=0f540h ( 62784) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu up.[0m
+[0;32mI (196) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (215) cpu_start: Pro cpu start user code[0m
+[0;32mI (215) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (215) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     revolog5g[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (227) cpu_start: Compile time:     Dec 30 2024 16:39:51[0m
+[0;32mI (233) cpu_start: ELF file SHA256:  dab3b2def0abcf0e...[0m
+[0;32mI (239) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (249) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (254) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (259) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (266) heap_init: At 3FC97A78 len 00051C98 (327 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (279) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (292) spi_flash: detected chip: gd[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;32mI (300) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (307) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (314) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (319) coexist: coexist rom version e7ae62f[0m
+[0;32mI (324) app_start: Starting scheduler on CPU0[0m
+[0;32mI (329) app_start: Starting scheduler on CPU1[0m
+[0;32mI (329) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[0;32mI (339) STORAGE: Initializing...[0m
+[0;32mI (369) XPOWER: Using ESP-IDF Driver interface.[0m
+[0;32mI (369) XPOWER: getID:0x4a[0m
+[0;32mI (1369) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) MODEM: .AT
+[0m
+[0;32mI (1519) MODEM: AT
+OK
+[0m
+[0;32mI (1519) MODEM: Start modem successfully
+[0m
+[0;32mI (1569) MODEM: .AT+CPIN?
+[0m
+[0;32mI (1669) MODEM: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (1669) MODEM: SIM Card READY
+[0m
+[0;32mI (1719) MODEM: .AT+CNMP=51
+[0m
+[0;32mI (1819) MODEM: AT+CNMP=51
+OK
+[0m
+[0;32mI (1819) MODEM: Set network mode successfully
+[0m
+[0;32mI (1869) MODEM: .AT+CMNB=1
+[0m
+[0;32mI (1969) MODEM: AT+CMNB=1
+OK
+[0m
+[0;32mI (1969) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (2019) MODEM: .AT+CEREG?
+[0m
+[0;32mI (2119) MODEM: AT+CEREG?
++CEREG: 0,1
+
+OK
+[0m
+[0;32mI (2119) MODEM: Get EPS network registration status successfully
+[0m
+[0;32mI (2169) MODEM: .AT+CGATT?
+[0m
+[0;32mI (2269) MODEM: AT+CGATT?
++CGATT: 1
+
+OK
+[0m
+[0;32mI (2269) MODEM: Attached from GPRS service sucessfully[0m
+[0;32mI (2319) MODEM: .AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+[0m
+[0;32mI (2419) MODEM: AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+OK
+[0m
+[0;32mI (2419) MODEM: PDP context sucessfully[0m
+[0;32mI (2469) MODEM: .AT+CNACT?
+[0m
+[0;32mI (2569) MODEM: AT+CNACT?
++CNACT: 0,1,"10.229.222.14"
++CNACT: 1,0,"0.0.0.0"
++CNACT: 2,0,"0.0.0.0"
++CNACT: 3,0,"0.0.0.0"
+
+OK
+[0m
+[0;32mI (2569) MODEM: IP MODEM: 10.229.222.14[0m
+[0;32mI (2569) MODEM: App network active sucessfully[0m
+[0;32mI (2579) MODEM: GPRS status : connected
+[0m
+[0;32mI (2629) MODEM: .AT+CGNAPN
+[0m
+[0;32mI (2729) MODEM: AT+CGNAPN
++CGNAPN: 1,"smart.m2m.vivo.com.br"
+
+OK
+[0m
+[0;32mI (2729) MODEM: Get network mode successfully
+[0m
+[0;32mI (2779) MODEM: .AT+GSN
+[0m
+[0;32mI (2879) MODEM: AT+GSN
+860016047408716
+
+OK
+[0m
+[0;32mI (2879) MODEM: Get IMEI sucessfully[0m
+[0;32mI (2879) MODEM: IMEI = 860016047408716[0m
+[0;32mI (2929) MODEM: .AT+SMDISC
+[0m
+[0;32mI (3029) MODEM: AT+SMDISC
+OK
+[0m
+[0;32mI (3029) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (4079) MODEM: .AT+SMCONF="CLIENTID","860016047408716"
+[0m
+[0;32mI (4179) MODEM: AT+SMCONF="CLIENTID","860016047408716"
+OK
+[0m
+[0;32mI (4229) MODEM: .AT+SMCONF="URL","gw.qa.revolog.com.br",1883
+[0m
+[0;32mI (4329) MODEM: AT+SMCONF="URL","gw.qa.revolog.com.br",1883
+OK
+[0m
+[0;32mI (4379) MODEM: .AT+SMCONF="USERNAME","tecnologia"
+[0m
+[0;32mI (4479) MODEM: AT+SMCONF="USERNAME","tecnologia"
+OK
+[0m
+[0;32mI (4529) MODEM: .AT+SMCONF="PASSWORD","128Parsecs!"
+[0m
+[0;32mI (4629) MODEM: AT+SMCONF="PASSWORD","128Parsecs!"
+OK
+[0m
+[0;32mI (4679) MODEM: .AT+SMCONF="CLEANSS",0
+[0m
+[0;32mI (4779) MODEM: AT+SMCONF="CLEANSS",0
+OK
+[0m
+[0;32mI (4829) MODEM: .AT+SMCONF="QOS",1
+[0m
+[0;32mI (4929) MODEM: AT+SMCONF="QOS",1
+OK
+[0m
+[0;32mI (4979) MODEM: .AT+SMCONF="RETAIN",0
+[0m
+[0;32mI (5079) MODEM: AT+SMCONF="RETAIN",0
+OK
+[0m
+[0;32mI (5129) MODEM: .AT+SMCONF="KEEPTIME",100
+[0m
+[0;32mI (5229) MODEM: AT+SMCONF="KEEPTIME",100
+OK
+[0m
+[0;32mI (5279) MODEM: .AT+SMCONF?
+[0m
+[0;32mI (5379) MODEM: AT+SMCONF?
++SMCONF: 
+CLIENTID: "860016047408716"
+URL: "gw.qa.revolog.com.br",1883
+KEEPTIME: 100
+USERNAME: "tecnologia"
+PASSWORD: "128Parsecs!"
+CLEANSS: 0
+QOS: 1
+TOPIC: ""
+MESSAGE: ""
+RETAIN: 0
+SUBHEX: 0
+ASYNCMODE: 0
+MESSAGELEN: 0
+
+OK
+[0m
+[0;32mI (5389) main_task: Returned from app_main()[0m
+[0;32mI (5469) MODEM: .AT+SMCONN
+[0m
+[0;32mI (5589) MODEM: AT+SMCONN[0m
+[0;32mI (5589) MQTT: MQTT Client no connected[0m
+[0;32mI (6659) MODEM: .AT+SMCONN
+[0m
+[0;32mI (6779) MODEM: 
+OK
+AT+SMCONN
+ERROR
+[0m
+[0;32mI (6779) MQTT: MQTT Client connected[0m
+[0;32mI (6839) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (6959) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (7019) MODEM: .AT+SMPUB="stlab/sim7080/up/status",8,1,1
+[0m
+[0;32mI (7139) MODEM: AT+SMPUB="stlab/sim7080/up/status",8,1,1
+> [0m
+[0;32mI (7199) MODEM: .first-on[0m
+[0;32mI (7319) MODEM: first-on[0m
+[0;32mI (7319) MODEM: MQTT publish status successfully[0m
+[0;32mI (7379) MODEM: .AT+SMDISC
+[0m
+[0;32mI (8489) MODEM: .AT+SMDISC
+[0m
+[0;32mI (8609) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (8609) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (69689) MODEM: .AT+SMCONN
+[0m
+[0;32mI (69809) MODEM: AT+SMCONN[0m
+[0;32mI (69809) MQTT: MQTT Client no connected[0m
+[0;32mI (70879) MODEM: .AT+SMCONN
+[0m
+[0;32mI (71989) MODEM: .AT+SMCONN
+[0m
+[0;32mI (73099) MODEM: .AT+SMCONN
+[0m
+[0;32mI (73239) MODEM: 
+OK
+[0m
+[0;32mI (73239) MQTT: MQTT Client connected[0m
+[0;32mI (73299) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (73419) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (73479) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (73599) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (73659) MODEM: .on[0m
+[0;32mI (73779) MODEM: on[0m
+[0;32mI (73779) MODEM: MQTT publish status successfully[0m
+[0;32mI (73839) MODEM: .AT+SMDISC
+[0m
+[0;32mI (74949) MODEM: .AT+SMDISC
+[0m
+[0;32mI (75069) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (75069) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (136149) MODEM: .AT+SMCONN
+[0m
+[0;32mI (136269) MODEM: AT+SMCONN[0m
+[0;32mI (136269) MQTT: MQTT Client no connected[0m
+[0;32mI (137339) MODEM: .AT+SMCONN
+[0m
+[0;32mI (138449) MODEM: .AT+SMCONN
+[0m
+[0;32mI (139559) MODEM: .AT+SMCONN
+[0m
+[0;32mI (139719) MODEM: 
+OK
+[0m
+[0;32mI (139719) MQTT: MQTT Client connected[0m
+[0;32mI (139779) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (139899) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (139959) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (140079) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (140139) MODEM: .on[0m
+[0;32mI (140259) MODEM: on[0m
+[0;32mI (140259) MODEM: MQTT publish status successfully[0m
+[0;32mI (140319) MODEM: .AT+SMDISC
+[0m
+[0;32mI (141429) MODEM: .AT+SMDISC
+[0m
+[0;32mI (141549) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (141549) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (202629) MODEM: .AT+SMCONN
+[0m
+[0;32mI (202749) MODEM: AT+SMCONN[0m
+[0;32mI (202749) MQTT: MQTT Client no connected[0m
+[0;32mI (203819) MODEM: .AT+SMCONN
+[0m
+[0;32mI (204929) MODEM: .AT+SMCONN
+[0m
+[0;32mI (206039) MODEM: .AT+SMCONN
+[0m
+[0;32mI (206199) MODEM: 
+OK
+[0m
+[0;32mI (206199) MQTT: MQTT Client connected[0m
+[0;32mI (206259) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (206379) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (206439) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (206559) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (206619) MODEM: .on[0m
+[0;32mI (206739) MODEM: on[0m
+[0;32mI (206739) MODEM: MQTT publish status successfully[0m
+[0;32mI (206799) MODEM: .AT+SMDISC
+[0m
+[0;32mI (207909) MODEM: .AT+SMDISC
+[0m
+[0;32mI (208029) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (208029) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (269109) MODEM: .AT+SMCONN
+[0m
+[0;32mI (269229) MODEM: AT+SMCONN[0m
+[0;32mI (269229) MQTT: MQTT Client no connected[0m
+[0;32mI (270299) MODEM: .AT+SMCONN
+[0m
+[0;32mI (271409) MODEM: .AT+SMCONN
+[0m
+[0;32mI (272519) MODEM: .AT+SMCONN
+[0m
+[0;32mI (272679) MODEM: 
+OK
+[0m
+[0;32mI (272679) MQTT: MQTT Client connected[0m
+[0;32mI (272739) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (272859) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (272919) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (273039) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (273099) MODEM: .on[0m
+[0;32mI (273219) MODEM: on[0m
+[0;32mI (273219) MODEM: MQTT publish status successfully[0m
+[0;32mI (273279) MODEM: .AT+SMDISC
+[0m
+[0;32mI (274389) MODEM: .AT+SMDISC
+[0m
+[0;32mI (274509) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (274509) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (335589) MODEM: .AT+SMCONN
+[0m
+[0;32mI (335709) MODEM: AT+SMCONN[0m
+[0;32mI (335709) MQTT: MQTT Client no connected[0m
+[0;32mI (336779) MODEM: .AT+SMCONN
+[0m
+[0;32mI (337889) MODEM: .AT+SMCONN
+[0m
+[0;32mI (338999) MODEM: .AT+SMCONN
+[0m
+[0;32mI (339159) MODEM: 
+OK
+[0m
+[0;32mI (339159) MQTT: MQTT Client connected[0m
+[0;32mI (339219) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (339339) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (339399) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (339519) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (339579) MODEM: .on[0m
+[0;32mI (339699) MODEM: on[0m
+[0;32mI (339699) MODEM: MQTT publish status successfully[0m
+[0;32mI (339759) MODEM: .AT+SMDISC
+[0m
+[0;32mI (340869) MODEM: .AT+SMDISC
+[0m
+[0;32mI (340989) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (340989) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (402069) MODEM: .AT+SMCONN
+[0m
+[0;32mI (402189) MODEM: AT+SMCONN[0m
+[0;32mI (402189) MQTT: MQTT Client no connected[0m
+[0;32mI (403259) MODEM: .AT+SMCONN
+[0m
+[0;32mI (404369) MODEM: .AT+SMCONN
+[0m
+[0;32mI (405479) MODEM: .AT+SMCONN
+[0m
+[0;32mI (405639) MODEM: 
+OK
+[0m
+[0;32mI (405639) MQTT: MQTT Client connected[0m
+[0;32mI (405699) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (405819) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (405879) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (405999) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (406059) MODEM: .on[0m
+[0;32mI (406179) MODEM: on[0m
+[0;32mI (406179) MODEM: MQTT publish status successfully[0m
+[0;32mI (406239) MODEM: .AT+SMDISC
+[0m
+[0;32mI (407349) MODEM: .AT+SMDISC
+[0m
+[0;32mI (407469) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (407469) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (468549) MODEM: .AT+SMCONN
+[0m
+[0;32mI (468669) MODEM: AT+SMCONN[0m
+[0;32mI (468669) MQTT: MQTT Client no connected[0m
+[0;32mI (469739) MODEM: .AT+SMCONN
+[0m
+[0;32mI (470849) MODEM: .AT+SMCONN
+[0m
+[0;32mI (471959) MODEM: .AT+SMCONN
+[0m
+[0;32mI (472129) MODEM: 
+OK
+[0m
+[0;32mI (472129) MQTT: MQTT Client connected[0m
+[0;32mI (472189) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (472309) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (472369) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (472489) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (472549) MODEM: .on[0m
+[0;32mI (472669) MODEM: on[0m
+[0;32mI (472669) MODEM: MQTT publish status successfully[0m
+[0;32mI (472729) MODEM: .AT+SMDISC
+[0m
+[0;32mI (473839) MODEM: .AT+SMDISC
+[0m
+[0;32mI (473959) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (473959) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (535039) MODEM: .AT+SMCONN
+[0m
+[0;32mI (535159) MODEM: AT+SMCONN[0m
+[0;32mI (535159) MQTT: MQTT Client no connected[0m
+[0;32mI (536229) MODEM: .AT+SMCONN
+[0m
+[0;32mI (537339) MODEM: .AT+SMCONN
+[0m
+[0;32mI (538449) MODEM: .AT+SMCONN
+[0m
+[0;32mI (538609) MODEM: 
+OK
+[0m
+[0;32mI (538609) MQTT: MQTT Client connected[0m
+[0;32mI (538669) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (538789) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (538849) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (538969) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (539029) MODEM: .on[0m
+[0;32mI (539149) MODEM: on[0m
+[0;32mI (539149) MODEM: MQTT publish status successfully[0m
+[0;32mI (539209) MODEM: .AT+SMDISC
+[0m
+[0;32mI (540319) MODEM: .AT+SMDISC
+[0m
+[0;32mI (540439) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (540439) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (601519) MODEM: .AT+SMCONN
+[0m
+[0;32mI (601639) MODEM: AT+SMCONN[0m
+[0;32mI (601639) MQTT: MQTT Client no connected[0m
+[0;32mI (602709) MODEM: .AT+SMCONN
+[0m
+[0;32mI (603819) MODEM: .AT+SMCONN
+[0m
+[0;32mI (604929) MODEM: .AT+SMCONN
+[0m
+[0;32mI (605089) MODEM: 
+OK
+[0m
+[0;32mI (605089) MQTT: MQTT Client connected[0m
+[0;32mI (605149) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (605269) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (605329) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (605449) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (605509) MODEM: .on[0m
+[0;32mI (605629) MODEM: on[0m
+[0;32mI (605629) MODEM: MQTT publish status successfully[0m
+[0;32mI (605689) MODEM: .AT+SMDISC
+[0m
+[0;32mI (606799) MODEM: .AT+SMDISC
+[0m
+[0;32mI (606919) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (606919) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (667999) MODEM: .AT+SMCONN
+[0m
+[0;32mI (668119) MODEM: AT+SMCONN[0m
+[0;32mI (668119) MQTT: MQTT Client no connected[0m
+[0;32mI (669189) MODEM: .AT+SMCONN
+[0m
+[0;32mI (670299) MODEM: .AT+SMCONN
+[0m
+[0;32mI (671409) MODEM: .AT+SMCONN
+[0m
+[0;32mI (671559) MODEM: 
+OK
+[0m
+[0;32mI (671559) MQTT: MQTT Client connected[0m
+[0;32mI (671619) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (671739) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (671799) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (671919) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (671979) MODEM: .on[0m
+[0;32mI (672099) MODEM: on[0m
+[0;32mI (672099) MODEM: MQTT publish status successfully[0m
+[0;32mI (672159) MODEM: .AT+SMDISC
+[0m
+[0;32mI (673269) MODEM: .AT+SMDISC
+[0m
+[0;32mI (673389) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (673389) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (734469) MODEM: .AT+SMCONN
+[0m
+[0;32mI (734589) MODEM: AT+SMCONN[0m
+[0;32mI (734589) MQTT: MQTT Client no connected[0m
+[0;32mI (735659) MODEM: .AT+SMCONN
+[0m
+[0;32mI (736769) MODEM: .AT+SMCONN
+[0m
+[0;32mI (737879) MODEM: .AT+SMCONN
+[0m
+[0;32mI (738039) MODEM: 
+OK
+[0m
+[0;32mI (738039) MQTT: MQTT Client connected[0m
+[0;32mI (738099) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (738219) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (738279) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (738399) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (738459) MODEM: .on[0m
+[0;32mI (738579) MODEM: on[0m
+[0;32mI (738579) MODEM: MQTT publish status successfully[0m
+[0;32mI (738639) MODEM: .AT+SMDISC
+[0m
+[0;32mI (739749) MODEM: .AT+SMDISC
+[0m
+[0;32mI (739869) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (739869) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (800949) MODEM: .AT+SMCONN
+[0m
+[0;32mI (801069) MODEM: AT+SMCONN[0m
+[0;32mI (801069) MQTT: MQTT Client no connected[0m
+[0;32mI (802139) MODEM: .AT+SMCONN
+[0m
+[0;32mI (803249) MODEM: .AT+SMCONN
+[0m
+[0;32mI (804359) MODEM: .AT+SMCONN
+[0m
+[0;32mI (804519) MODEM: 
+OK
+[0m
+[0;32mI (804519) MQTT: MQTT Client connected[0m
+[0;32mI (804579) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (804699) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (804759) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (804879) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (804939) MODEM: .on[0m
+[0;32mI (805059) MODEM: on[0m
+[0;32mI (805059) MODEM: MQTT publish status successfully[0m
+[0;32mI (805119) MODEM: .AT+SMDISC
+[0m
+[0;32mI (806229) MODEM: .AT+SMDISC
+[0m
+[0;32mI (806349) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (806349) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (867429) MODEM: .AT+SMCONN
+[0m
+[0;32mI (867549) MODEM: AT+SMCONN[0m
+[0;32mI (867549) MQTT: MQTT Client no connected[0m
+[0;32mI (868619) MODEM: .AT+SMCONN
+[0m
+[0;32mI (869729) MODEM: .AT+SMCONN
+[0m
+[0;32mI (870839) MODEM: .AT+SMCONN
+[0m
+[0;32mI (870999) MODEM: 
+OK
+[0m
+[0;32mI (870999) MQTT: MQTT Client connected[0m
+[0;32mI (871059) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (871179) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (871239) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (871359) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (871419) MODEM: .on[0m
+[0;32mI (871539) MODEM: on[0m
+[0;32mI (871539) MODEM: MQTT publish status successfully[0m
+[0;32mI (871599) MODEM: .AT+SMDISC
+[0m
+[0;32mI (872709) MODEM: .AT+SMDISC
+[0m
+[0;32mI (872829) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (872829) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (933909) MODEM: .AT+SMCONN
+[0m
+[0;32mI (934029) MODEM: AT+SMCONN[0m
+[0;32mI (934029) MQTT: MQTT Client no connected[0m
+[0;32mI (935099) MODEM: .AT+SMCONN
+[0m
+[0;32mI (936209) MODEM: .AT+SMCONN
+[0m
+[0;32mI (937319) MODEM: .AT+SMCONN
+[0m
+[0;32mI (937479) MODEM: 
+OK
+[0m
+[0;32mI (937479) MQTT: MQTT Client connected[0m
+[0;32mI (937539) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (937659) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (937719) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (937839) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (937899) MODEM: .on[0m
+[0;32mI (938019) MODEM: on[0m
+[0;32mI (938019) MODEM: MQTT publish status successfully[0m
+[0;32mI (938079) MODEM: .AT+SMDISC
+[0m
+[0;32mI (939189) MODEM: .AT+SMDISC
+[0m
+[0;32mI (939309) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (939309) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1000389) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1000509) MODEM: AT+SMCONN[0m
+[0;32mI (1000509) MQTT: MQTT Client no connected[0m
+[0;32mI (1001579) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1002689) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1003799) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1003959) MODEM: 
+OK
+[0m
+[0;32mI (1003959) MQTT: MQTT Client connected[0m
+[0;32mI (1004019) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1004139) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1004199) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1004319) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1004379) MODEM: .on[0m
+[0;32mI (1004499) MODEM: on[0m
+[0;32mI (1004499) MODEM: MQTT publish status successfully[0m
+[0;32mI (1004559) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1005669) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1005789) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1005789) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1066869) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1066989) MODEM: AT+SMCONN[0m
+[0;32mI (1066989) MQTT: MQTT Client no connected[0m
+[0;32mI (1068059) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1069169) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1070279) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1070439) MODEM: 
+OK
+[0m
+[0;32mI (1070439) MQTT: MQTT Client connected[0m
+[0;32mI (1070499) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1070619) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1070679) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1070799) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1070859) MODEM: .on[0m
+[0;32mI (1070979) MODEM: on[0m
+[0;32mI (1070979) MODEM: MQTT publish status successfully[0m
+[0;32mI (1071039) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1072149) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1072269) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1072269) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1133349) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1133469) MODEM: AT+SMCONN[0m
+[0;32mI (1133469) MQTT: MQTT Client no connected[0m
+[0;32mI (1134539) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1135649) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1136759) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1136929) MODEM: 
+OK
+[0m
+[0;32mI (1136929) MQTT: MQTT Client connected[0m
+[0;32mI (1136989) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1137109) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1137169) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1137289) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1137349) MODEM: .on[0m
+[0;32mI (1137469) MODEM: on[0m
+[0;32mI (1137469) MODEM: MQTT publish status successfully[0m
+[0;32mI (1137529) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1138639) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1138929) MODEM: 
+OK
+[0m
+[0;32mI (1138929) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1200009) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1200129) MODEM: 
++SMSTATE: 0
+AT+SMCONN[0m
+[0;32mI (1200129) MQTT: MQTT Client no connected[0m
+[0;32mI (1201199) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1201319) MODEM: 
+OK
+AT+SMCONN
+ERROR
+[0m
+[0;32mI (1201319) MQTT: MQTT Client connected[0m
+[0;32mI (1201379) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1201499) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1201559) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1201679) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1201739) MODEM: .on[0m
+[0;32mI (1201859) MODEM: on[0m
+[0;32mI (1201859) MODEM: MQTT publish status successfully[0m
+[0;32mI (1201919) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1203029) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1203149) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1203149) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1264229) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1264349) MODEM: AT+SMCONN[0m
+[0;32mI (1264349) MQTT: MQTT Client no connected[0m
+[0;32mI (1265419) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1266529) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1267639) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1267799) MODEM: 
+OK
+[0m
+[0;32mI (1267799) MQTT: MQTT Client connected[0m
+[0;32mI (1267859) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1267979) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1268039) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1268159) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1268219) MODEM: .on[0m
+[0;32mI (1268339) MODEM: on[0m
+[0;32mI (1268339) MODEM: MQTT publish status successfully[0m
+[0;32mI (1268399) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1269509) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1269629) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1269629) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1330709) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1330829) MODEM: AT+SMCONN[0m
+[0;32mI (1330829) MQTT: MQTT Client no connected[0m
+[0;32mI (1331899) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1333009) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1334119) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1334279) MODEM: 
+OK
+[0m
+[0;32mI (1334279) MQTT: MQTT Client connected[0m
+[0;32mI (1334339) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1334459) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1334519) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1334639) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1334699) MODEM: .on[0m
+[0;32mI (1334819) MODEM: on[0m
+[0;32mI (1334819) MODEM: MQTT publish status successfully[0m
+[0;32mI (1334879) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1335989) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1336109) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1336109) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1397189) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1397309) MODEM: AT+SMCONN[0m
+[0;32mI (1397309) MQTT: MQTT Client no connected[0m
+[0;32mI (1398379) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1399489) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1400599) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1400759) MODEM: 
+OK
+[0m
+[0;32mI (1400759) MQTT: MQTT Client connected[0m
+[0;32mI (1400819) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1400939) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1400999) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1401119) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1401179) MODEM: .on[0m
+[0;32mI (1401299) MODEM: on[0m
+[0;32mI (1401299) MODEM: MQTT publish status successfully[0m
+[0;32mI (1401359) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1402469) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1402589) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1402589) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1463669) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1463789) MODEM: AT+SMCONN[0m
+[0;32mI (1463789) MQTT: MQTT Client no connected[0m
+[0;32mI (1464859) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1465969) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1467079) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1467239) MODEM: 
+OK
+[0m
+[0;32mI (1467239) MQTT: MQTT Client connected[0m
+[0;32mI (1467299) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1467419) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1467479) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1467599) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1467659) MODEM: .on[0m
+[0;32mI (1467779) MODEM: on[0m
+[0;32mI (1467779) MODEM: MQTT publish status successfully[0m
+[0;32mI (1467839) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1468949) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1469069) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1469069) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1530149) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1530269) MODEM: AT+SMCONN[0m
+[0;32mI (1530269) MQTT: MQTT Client no connected[0m
+[0;32mI (1531339) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1532449) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1533559) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1533729) MODEM: 
+OK
+[0m
+[0;32mI (1533729) MQTT: MQTT Client connected[0m
+[0;32mI (1533789) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1533909) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1533969) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1534089) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1534149) MODEM: .on[0m
+[0;32mI (1534269) MODEM: on[0m
+[0;32mI (1534269) MODEM: MQTT publish status successfully[0m
+[0;32mI (1534329) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1535439) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1535559) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1535559) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1596639) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1596759) MODEM: AT+SMCONN[0m
+[0;32mI (1596759) MQTT: MQTT Client no connected[0m
+[0;32mI (1597829) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1598939) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1600049) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1600199) MODEM: 
+OK
+[0m
+[0;32mI (1600199) MQTT: MQTT Client connected[0m
+[0;32mI (1600259) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1600379) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1600439) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1600559) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1600619) MODEM: .on[0m
+[0;32mI (1600739) MODEM: on[0m
+[0;32mI (1600739) MODEM: MQTT publish status successfully[0m
+[0;32mI (1600799) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1601909) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1602029) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1602029) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1663109) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1663229) MODEM: AT+SMCONN[0m
+[0;32mI (1663229) MQTT: MQTT Client no connected[0m
+[0;32mI (1664299) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1665409) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1666519) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1666679) MODEM: 
+OK
+[0m
+[0;32mI (1666679) MQTT: MQTT Client connected[0m
+[0;32mI (1666739) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1666859) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1666919) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1667039) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1667099) MODEM: .on[0m
+[0;32mI (1667219) MODEM: on[0m
+[0;32mI (1667219) MODEM: MQTT publish status successfully[0m
+[0;32mI (1667279) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1668389) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1668689) MODEM: 
+OK
+[0m
+[0;32mI (1668689) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1729769) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1729889) MODEM: 
++SMSTATE: 0
+AT+SMCONN[0m
+[0;32mI (1729889) MQTT: MQTT Client no connected[0m
+[0;32mI (1730959) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1731079) MODEM: 
+OK
+AT+SMCONN
+ERROR
+[0m
+[0;32mI (1731079) MQTT: MQTT Client connected[0m
+[0;32mI (1731139) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1731259) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1731319) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1731439) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1731499) MODEM: .on[0m
+[0;32mI (1731619) MODEM: on[0m
+[0;32mI (1731619) MODEM: MQTT publish status successfully[0m
+[0;32mI (1731679) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1732789) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1732909) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1732909) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1793989) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1794109) MODEM: AT+SMCONN[0m
+[0;32mI (1794109) MQTT: MQTT Client no connected[0m
+[0;32mI (1795179) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1796289) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1797399) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1797559) MODEM: 
+OK
+[0m
+[0;32mI (1797559) MQTT: MQTT Client connected[0m
+[0;32mI (1797619) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1797739) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1797799) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1797919) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1797979) MODEM: .on[0m
+[0;32mI (1798099) MODEM: on[0m
+[0;32mI (1798099) MODEM: MQTT publish status successfully[0m
+[0;32mI (1798159) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1799269) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1799389) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1799389) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1860469) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1860589) MODEM: AT+SMCONN[0m
+[0;32mI (1860589) MQTT: MQTT Client no connected[0m
+[0;32mI (1861659) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1862769) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1863879) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1864119) MODEM: 
+OK
+[0m
+[0;32mI (1864119) MQTT: MQTT Client connected[0m
+[0;32mI (1864179) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1864299) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1864359) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1864479) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1864539) MODEM: .on[0m
+[0;32mI (1864659) MODEM: on[0m
+[0;32mI (1864659) MODEM: MQTT publish status successfully[0m
+[0;32mI (1864719) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1865829) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1866129) MODEM: 
+OK
+[0m
+[0;32mI (1866129) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1927209) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1927329) MODEM: 
++SMSTATE: 0
+AT+SMCONN[0m
+[0;32mI (1927329) MQTT: MQTT Client no connected[0m
+[0;32mI (1928399) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1928519) MODEM: 
+OK
+AT+SMCONN
+ERROR
+[0m
+[0;32mI (1928519) MQTT: MQTT Client connected[0m
+[0;32mI (1928579) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1928699) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1928759) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1928879) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1928939) MODEM: .on[0m
+[0;32mI (1929059) MODEM: on[0m
+[0;32mI (1929059) MODEM: MQTT publish status successfully[0m
+[0;32mI (1929119) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1930229) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1930349) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1930349) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (1991429) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1991549) MODEM: AT+SMCONN[0m
+[0;32mI (1991549) MQTT: MQTT Client no connected[0m
+[0;32mI (1992619) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1993729) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1994839) MODEM: .AT+SMCONN
+[0m
+[0;32mI (1994989) MODEM: 
+OK
+[0m
+[0;32mI (1994989) MQTT: MQTT Client connected[0m
+[0;32mI (1995049) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (1995169) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (1995229) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (1995349) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (1995409) MODEM: .on[0m
+[0;32mI (1995529) MODEM: on[0m
+[0;32mI (1995529) MODEM: MQTT publish status successfully[0m
+[0;32mI (1995589) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1996699) MODEM: .AT+SMDISC
+[0m
+[0;32mI (1996819) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (1996819) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (2057899) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2058019) MODEM: AT+SMCONN[0m
+[0;32mI (2058019) MQTT: MQTT Client no connected[0m
+[0;32mI (2059089) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2060199) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2061309) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2061479) MODEM: 
+OK
+[0m
+[0;32mI (2061479) MQTT: MQTT Client connected[0m
+[0;32mI (2061539) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (2061659) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (2061719) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (2061839) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (2061899) MODEM: .on[0m
+[0;32mI (2062019) MODEM: on[0m
+[0;32mI (2062019) MODEM: MQTT publish status successfully[0m
+[0;32mI (2062079) MODEM: .AT+SMDISC
+[0m
+[0;32mI (2063189) MODEM: .AT+SMDISC
+[0m
+[0;32mI (2063309) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (2063309) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (2124389) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2124509) MODEM: AT+SMCONN[0m
+[0;32mI (2124509) MQTT: MQTT Client no connected[0m
+[0;32mI (2125579) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2126689) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2127799) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2128039) MODEM: 
+OK
+[0m
+[0;32mI (2128039) MQTT: MQTT Client connected[0m
+[0;32mI (2128099) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (2128219) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (2128279) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (2128399) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (2128459) MODEM: .on[0m
+[0;32mI (2128579) MODEM: on[0m
+[0;32mI (2128579) MODEM: MQTT publish status successfully[0m
+[0;32mI (2128639) MODEM: .AT+SMDISC
+[0m
+[0;32mI (2129749) MODEM: .AT+SMDISC
+[0m
+[0;32mI (2129869) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (2129869) MQTT: MQTT disconnected successfully
+[0m
+[0;32mI (2190949) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2191069) MODEM: AT+SMCONN[0m
+[0;32mI (2191069) MQTT: MQTT Client no connected[0m
+[0;32mI (2192139) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2193249) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2194359) MODEM: .AT+SMCONN
+[0m
+[0;32mI (2194519) MODEM: 
+OK
+[0m
+[0;32mI (2194519) MQTT: MQTT Client connected[0m
+[0;32mI (2194579) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (2194699) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (2194759) MODEM: .AT+SMPUB="stlab/sim7080/up/status",2,1,1
+[0m
+[0;32mI (2194879) MODEM: AT+SMPUB="stlab/sim7080/up/status",2,1,1
+> [0m
+[0;32mI (2194939) MODEM: .on[0m
+[0;32mI (2195059) MODEM: on[0m
+[0;32mI (2195059) MODEM: MQTT publish status successfully[0m
+[0;32mI (2195119) MODEM: .AT+SMDISC
+[0m
+[0;32mI (2196229) MODEM: .AT+SMDISC
+[0m
+[0;32mI (2196349) MODEM: 
+OK
+AT+SMDISC
+OK
+[0m
+[0;32mI (2196349) MQTT: MQTT disconnected successfully
+[0m

@@ -1,0 +1,2 @@
+/home/santos/esp5.1.2/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-ar qc libgsm.a CMakeFiles/__idf_gsm.dir/gsmModem.c.obj CMakeFiles/__idf_gsm.dir/gsmGPS.c.obj CMakeFiles/__idf_gsm.dir/gsmMQTT.c.obj
+/home/santos/esp5.1.2/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-ranlib libgsm.a

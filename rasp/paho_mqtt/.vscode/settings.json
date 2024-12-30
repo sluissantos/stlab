@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "stdlib.h": "c"
+    },
+    "nrf5-vscode.seggerEmbeddedStudioPath": "/opt/SEGGER/segger_embedded_studio_8.22a"
+}

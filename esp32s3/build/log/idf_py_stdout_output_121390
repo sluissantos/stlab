@@ -1,0 +1,262 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490cf
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1758
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+entry 0x403c9908
+[0;32mI (26) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec 30 2024 16:32:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 otadata          OTA data         01 00 00009000 00002000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000b000 00005000[0m
+[0;32mI (80) boot:  2 ota_0            OTA app          00 10 00010000 001f0000[0m
+[0;32mI (87) boot:  3 ota_1            OTA app          00 11 00200000 001f0000[0m
+[0;32mI (94) boot:  4 nvs              WiFi data        01 02 003f0000 00010000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d578h ( 54648) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001d5a0 vaddr=3fc93600 size=02a78h ( 10872) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=24808h (149512) map[0m
+[0;32mI (158) esp_image: segment 3: paddr=00044830 vaddr=3fc96078 size=0005ch (    92) load[0m
+[0;32mI (159) esp_image: segment 4: paddr=00044894 vaddr=40374000 size=0f540h ( 62784) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu up.[0m
+[0;32mI (196) cpu_start: Starting app cpu, entry point is 0x403754cc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (215) cpu_start: Pro cpu start user code[0m
+[0;32mI (215) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (215) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     revolog5g[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (227) cpu_start: Compile time:     Dec 30 2024 16:39:51[0m
+[0;32mI (233) cpu_start: ELF file SHA256:  9b9f7752866d60ac...[0m
+[0;32mI (239) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (245) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (249) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (254) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (259) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (266) heap_init: At 3FC97A78 len 00051C98 (327 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (279) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (292) spi_flash: detected chip: gd[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;32mI (300) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (306) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (314) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (319) coexist: coexist rom version e7ae62f[0m
+[0;32mI (324) app_start: Starting scheduler on CPU0[0m
+[0;32mI (329) app_start: Starting scheduler on CPU1[0m
+[0;32mI (329) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[0;32mI (339) STORAGE: Initializing...[0m
+[0;32mI (369) XPOWER: Using ESP-IDF Driver interface.[0m
+[0;32mI (369) XPOWER: getID:0x4a[0m
+[0;32mI (1369) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) MODEM: .AT
+[0m
+[0;32mI (1519) MODEM: AT
+OK
+[0m
+[0;32mI (1519) MODEM: Start modem successfully
+[0m
+[0;32mI (1569) MODEM: .AT+CPIN?
+[0m
+[0;32mI (1669) MODEM: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (1669) MODEM: SIM Card READY
+[0m
+[0;32mI (1719) MODEM: .AT+CNMP=51
+[0m
+[0;32mI (1819) MODEM: AT+CNMP=51
+OK
+[0m
+[0;32mI (1819) MODEM: Set network mode successfully
+[0m
+[0;32mI (1869) MODEM: .AT+CMNB=1
+[0m
+[0;32mI (1969) MODEM: AT+CMNB=1
+OK
+[0m
+[0;32mI (1969) MODEM: Set preferred mode successfully
+[0m
+[0;32mI (2019) MODEM: .AT+CEREG?
+[0m
+[0;32mI (2119) MODEM: AT+CEREG?
++CEREG: 0,1
+
+OK
+[0m
+[0;32mI (2119) MODEM: Get EPS network registration status successfully
+[0m
+[0;32mI (2169) MODEM: .AT+CGATT?
+[0m
+[0;32mI (2269) MODEM: AT+CGATT?
++CGATT: 1
+
+OK
+[0m
+[0;32mI (2269) MODEM: Attached from GPRS service sucessfully[0m
+[0;32mI (2319) MODEM: .AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+[0m
+[0;32mI (2419) MODEM: AT+CNCFG=0,1,"smart.m2m.vivo.com.br"
+OK
+[0m
+[0;32mI (2419) MODEM: PDP context sucessfully[0m
+[0;32mI (2469) MODEM: .AT+CNACT?
+[0m
+[0;32mI (2569) MODEM: AT+CNACT?
++CNACT: 0,1,"10.229.222.14"
++CNACT: 1,0,"0.0.0.0"
++CNACT: 2,0,"0.0.0.0"
++CNACT: 3,0,"0.0.0.0"
+
+OK
+[0m
+[0;32mI (2569) MODEM: IP MODEM: 10.229.222.14[0m
+[0;32mI (2569) MODEM: App network active sucessfully[0m
+[0;32mI (2579) MODEM: GPRS status : connected
+[0m
+[0;32mI (2629) MODEM: .AT+CGNAPN
+[0m
+[0;32mI (2729) MODEM: AT+CGNAPN
++CGNAPN: 1,"smart.m2m.vivo.com.br"
+
+OK
+[0m
+[0;32mI (2729) MODEM: Get network mode successfully
+[0m
+[0;32mI (2779) MODEM: .AT+GSN
+[0m
+[0;32mI (2879) MODEM: AT+GSN
+860016047408716
+
+OK
+[0m
+[0;32mI (2879) MODEM: Get IMEI sucessfully[0m
+[0;32mI (2879) MODEM: IMEI = 860016047408716[0m
+[0;32mI (2929) MODEM: .AT+SMDISC
+[0m
+[0;32mI (3029) MODEM: AT+SMDISC
+ERROR
+[0m
+[0;32mI (3029) MQTT: MQTT disconnected unsuccessfully
+[0m
+[0;32mI (4079) MODEM: .AT+SMCONF="CLIENTID","860016047408716"
+[0m
+[0;32mI (4179) MODEM: AT+SMCONF="CLIENTID","860016047408716"
+OK
+[0m
+[0;32mI (4229) MODEM: .AT+SMCONF="URL","gw.qa.revolog.com.br",1883
+[0m
+[0;32mI (4329) MODEM: AT+SMCONF="URL","gw.qa.revolog.com.br",1883
+OK
+[0m
+[0;32mI (4379) MODEM: .AT+SMCONF="USERNAME","tecnologia"
+[0m
+[0;32mI (4479) MODEM: AT+SMCONF="USERNAME","tecnologia"
+OK
+[0m
+[0;32mI (4529) MODEM: .AT+SMCONF="PASSWORD","128Parsecs!"
+[0m
+[0;32mI (4629) MODEM: AT+SMCONF="PASSWORD","128Parsecs!"
+OK
+[0m
+[0;32mI (4679) MODEM: .AT+SMCONF="CLEANSS",0
+[0m
+[0;32mI (4779) MODEM: AT+SMCONF="CLEANSS",0
+OK
+[0m
+[0;32mI (4829) MODEM: .AT+SMCONF="QOS",1
+[0m
+[0;32mI (4929) MODEM: AT+SMCONF="QOS",1
+OK
+[0m
+[0;32mI (4979) MODEM: .AT+SMCONF="RETAIN",0
+[0m
+[0;32mI (5079) MODEM: AT+SMCONF="RETAIN",0
+OK
+[0m
+[0;32mI (5129) MODEM: .AT+SMCONF="KEEPTIME",600
+[0m
+[0;32mI (5229) MODEM: AT+SMCONF="KEEPTIME",600
+OK
+[0m
+[0;32mI (5279) MODEM: .AT+SMCONF?
+[0m
+[0;32mI (5379) MODEM: AT+SMCONF?
++SMCONF: 
+CLIENTID: "860016047408716"
+URL: "gw.qa.revolog.com.br",1883
+KEEPTIME: 600
+USERNAME: "tecnologia"
+PASSWORD: "128Parsecs!"
+CLEANSS: 0
+QOS: 1
+TOPIC: ""
+MESSAGE: ""
+RETAIN: 0
+SUBHEX: 0
+ASYNCMODE: 0
+MESSAGELEN: 0
+
+OK
+[0m
+[0;32mI (5439) MODEM: .AT+SMCONN
+[0m
+[0;32mI (5539) MODEM: AT+SMCONN[0m
+[0;32mI (5539) MQTT: MQTT Client no connected[0m
+[0;32mI (6589) MODEM: .AT+SMCONN
+[0m
+[0;32mI (6689) MODEM: 
+OK
+AT+SMCONN
+ERROR
+[0m
+[0;32mI (6689) MQTT: MQTT Client connected[0m
+[0;32mI (6689) main_task: Returned from app_main()[0m
+[0;32mI (6759) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (6879) MODEM: AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (6939) MODEM: .AT+SMPUB="stlab/sim7080/up/status",8,1,1
+[0m
+[0;32mI (7059) MODEM: AT+SMPUB="stlab/sim7080/up/status",8,1,1
+> [0m
+[0;32mI (7119) MODEM: .first-on[0m
+[0;32mI (7239) MODEM: first-on[0m
+[0;32mI (7239) MODEM: MQTT publish status unsuccessfully[0m
+[0;32mI (67309) MODEM: .AT+SMSTATE?
+[0m
+[0;32mI (67429) MODEM: 
+OK
+AT+SMSTATE?
++SMSTATE: 2
+
+OK
+[0m
+[0;32mI (67489) MODEM: .AT+SMPUB="stlab/sim7080/up/status",8,1,1
+[0m
+[0;32mI (67609) MODEM: AT+SMPUB="stlab/sim7080/up/status",8,1,1
+> [0m
+[0;32mI (67669) MODEM: .first-on[0m
+[0;32mI (67789) MODEM: first-on[0m

@@ -1,0 +1,243 @@
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/santos/Documents/stlab/esp32s3/sdkconfig
+Loading defaults file /home/santos/Documents/stlab/esp32s3/sdkconfig.defaults...
+-- App "revolog5g" version: 1
+-- Adding linker script /home/santos/Documents/stlab/esp32s3/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/santos/esp/v5.1.2/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/santos/esp/v5.1.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/santos/esp/v5.1.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/santos/esp/v5.1.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/santos/esp/v5.1.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/santos/esp/v5.1.2/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/santos/esp/v5.1.2/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock communication console cxx devices driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos gsm hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt mqtts newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs storage tcp_transport touch_element uart ulp unity usb vfs wear_levelling wifi wifi_provisioning wpa_supplicant xpower xtensa
+-- Component paths: /home/santos/esp/v5.1.2/esp-idf/components/app_trace /home/santos/esp/v5.1.2/esp-idf/components/app_update /home/santos/esp/v5.1.2/esp-idf/components/bootloader /home/santos/esp/v5.1.2/esp-idf/components/bootloader_support /home/santos/esp/v5.1.2/esp-idf/components/bt /home/santos/esp/v5.1.2/esp-idf/components/cmock /home/santos/Documents/stlab/esp32s3/extra_components/communication /home/santos/esp/v5.1.2/esp-idf/components/console /home/santos/esp/v5.1.2/esp-idf/components/cxx /home/santos/Documents/stlab/esp32s3/extra_components/devices /home/santos/esp/v5.1.2/esp-idf/components/driver /home/santos/esp/v5.1.2/esp-idf/components/efuse /home/santos/esp/v5.1.2/esp-idf/components/esp-tls /home/santos/esp/v5.1.2/esp-idf/components/esp_adc /home/santos/esp/v5.1.2/esp-idf/components/esp_app_format /home/santos/esp/v5.1.2/esp-idf/components/esp_coex /home/santos/esp/v5.1.2/esp-idf/components/esp_common /home/santos/esp/v5.1.2/esp-idf/components/esp_eth /home/santos/esp/v5.1.2/esp-idf/components/esp_event /home/santos/esp/v5.1.2/esp-idf/components/esp_gdbstub /home/santos/esp/v5.1.2/esp-idf/components/esp_hid /home/santos/esp/v5.1.2/esp-idf/components/esp_http_client /home/santos/esp/v5.1.2/esp-idf/components/esp_http_server /home/santos/esp/v5.1.2/esp-idf/components/esp_https_ota /home/santos/esp/v5.1.2/esp-idf/components/esp_https_server /home/santos/esp/v5.1.2/esp-idf/components/esp_hw_support /home/santos/esp/v5.1.2/esp-idf/components/esp_lcd /home/santos/esp/v5.1.2/esp-idf/components/esp_local_ctrl /home/santos/esp/v5.1.2/esp-idf/components/esp_mm /home/santos/esp/v5.1.2/esp-idf/components/esp_netif /home/santos/esp/v5.1.2/esp-idf/components/esp_netif_stack /home/santos/esp/v5.1.2/esp-idf/components/esp_partition /home/santos/esp/v5.1.2/esp-idf/components/esp_phy /home/santos/esp/v5.1.2/esp-idf/components/esp_pm /home/santos/esp/v5.1.2/esp-idf/components/esp_psram /home/santos/esp/v5.1.2/esp-idf/components/esp_ringbuf /home/santos/esp/v5.1.2/esp-idf/components/esp_rom /home/santos/esp/v5.1.2/esp-idf/components/esp_system /home/santos/esp/v5.1.2/esp-idf/components/esp_timer /home/santos/esp/v5.1.2/esp-idf/components/esp_wifi /home/santos/esp/v5.1.2/esp-idf/components/espcoredump /home/santos/esp/v5.1.2/esp-idf/components/esptool_py /home/santos/esp/v5.1.2/esp-idf/components/fatfs /home/santos/esp/v5.1.2/esp-idf/components/freertos /home/santos/Documents/stlab/esp32s3/extra_components/gsm /home/santos/esp/v5.1.2/esp-idf/components/hal /home/santos/esp/v5.1.2/esp-idf/components/heap /home/santos/esp/v5.1.2/esp-idf/components/http_parser /home/santos/esp/v5.1.2/esp-idf/components/idf_test /home/santos/esp/v5.1.2/esp-idf/components/ieee802154 /home/santos/esp/v5.1.2/esp-idf/components/json /home/santos/esp/v5.1.2/esp-idf/components/log /home/santos/esp/v5.1.2/esp-idf/components/lwip /home/santos/Documents/stlab/esp32s3/main /home/santos/esp/v5.1.2/esp-idf/components/mbedtls /home/santos/esp/v5.1.2/esp-idf/components/mqtt /home/santos/Documents/stlab/esp32s3/extra_components/mqtts /home/santos/esp/v5.1.2/esp-idf/components/newlib /home/santos/esp/v5.1.2/esp-idf/components/nvs_flash /home/santos/esp/v5.1.2/esp-idf/components/openthread /home/santos/esp/v5.1.2/esp-idf/components/partition_table /home/santos/esp/v5.1.2/esp-idf/components/perfmon /home/santos/esp/v5.1.2/esp-idf/components/protobuf-c /home/santos/esp/v5.1.2/esp-idf/components/protocomm /home/santos/esp/v5.1.2/esp-idf/components/pthread /home/santos/esp/v5.1.2/esp-idf/components/sdmmc /home/santos/esp/v5.1.2/esp-idf/components/soc /home/santos/esp/v5.1.2/esp-idf/components/spi_flash /home/santos/esp/v5.1.2/esp-idf/components/spiffs /home/santos/Documents/stlab/esp32s3/extra_components/storage /home/santos/esp/v5.1.2/esp-idf/components/tcp_transport /home/santos/esp/v5.1.2/esp-idf/components/touch_element /home/santos/Documents/stlab/esp32s3/extra_components/uart /home/santos/esp/v5.1.2/esp-idf/components/ulp /home/santos/esp/v5.1.2/esp-idf/components/unity /home/santos/esp/v5.1.2/esp-idf/components/usb /home/santos/esp/v5.1.2/esp-idf/components/vfs /home/santos/esp/v5.1.2/esp-idf/components/wear_levelling /home/santos/Documents/stlab/esp32s3/extra_components/wifi /home/santos/esp/v5.1.2/esp-idf/components/wifi_provisioning /home/santos/esp/v5.1.2/esp-idf/components/wpa_supplicant /home/santos/Documents/stlab/esp32s3/extra_components/xpower /home/santos/esp/v5.1.2/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/santos/Documents/stlab/esp32s3/build
+[  0%] Built target memory_ld
+[  0%] Built target custom_bundle
+[  0%] Built target partition_table_bin
+[  0%] Built target _project_elf_src
+[  0%] Built target blank_ota_data
+Consolidate compiler generated dependencies of target __idf_ulp
+[  1%] Built target __idf_ulp
+[  1%] Performing build step for 'bootloader'
+Consolidate compiler generated dependencies of target __idf_esp_https_ota
+[  2%] Built target __idf_esp_https_ota
+Consolidate compiler generated dependencies of target __idf_log
+Consolidate compiler generated dependencies of target __idf_esp_http_server
+[  1%] Built target _project_elf_src
+[  4%] Built target __idf_log
+[  2%] Built target __idf_esp_http_server
+Consolidate compiler generated dependencies of target __idf_esp_rom
+Consolidate compiler generated dependencies of target __idf_esp_http_client
+[ 14%] Built target __idf_esp_rom
+[  3%] Built target __idf_esp_http_client
+Consolidate compiler generated dependencies of target __idf_esp_common
+Consolidate compiler generated dependencies of target __idf_tcp_transport
+[ 16%] Built target __idf_esp_common
+[  4%] Built target __idf_tcp_transport
+Consolidate compiler generated dependencies of target __idf_esp_hw_support
+[ 25%] Built target __idf_esp_hw_support
+Scanning dependencies of target __idf_esp_gdbstub
+Consolidate compiler generated dependencies of target __idf_esp_gdbstub
+Consolidate compiler generated dependencies of target __idf_esp_system
+[  5%] Built target __idf_esp_gdbstub
+[ 27%] Built target __idf_esp_system
+Consolidate compiler generated dependencies of target __idf_esp_adc
+Consolidate compiler generated dependencies of target __idf_efuse
+[  5%] Built target __idf_esp_adc
+[ 36%] Built target __idf_efuse
+Consolidate compiler generated dependencies of target __idf_esp-tls
+Consolidate compiler generated dependencies of target __idf_bootloader_support
+[  6%] Built target __idf_esp-tls
+Consolidate compiler generated dependencies of target __idf_http_parser
+[ 57%] Built target __idf_bootloader_support
+[  6%] Built target __idf_http_parser
+Consolidate compiler generated dependencies of target __idf_esp_app_format
+Consolidate compiler generated dependencies of target __idf_esp_wifi
+[ 58%] Built target __idf_esp_app_format
+Consolidate compiler generated dependencies of target __idf_spi_flash
+[  6%] Built target __idf_esp_wifi
+[ 60%] Built target __idf_spi_flash
+Consolidate compiler generated dependencies of target __idf_esp_coex
+Consolidate compiler generated dependencies of target __idf_hal
+[  6%] Built target __idf_esp_coex
+[ 65%] Built target __idf_hal
+Consolidate compiler generated dependencies of target __idf_micro-ecc
+[ 68%] Built target __idf_micro-ecc
+Consolidate compiler generated dependencies of target __idf_soc
+[ 91%] Built target __idf_soc
+Consolidate compiler generated dependencies of target __idf_wpa_supplicant
+Consolidate compiler generated dependencies of target __idf_xtensa
+[ 93%] Built target __idf_xtensa
+Consolidate compiler generated dependencies of target __idf_main
+[ 14%] Built target __idf_wpa_supplicant
+[ 95%] Built target __idf_main
+Consolidate compiler generated dependencies of target bootloader.elf
+Consolidate compiler generated dependencies of target __idf_esp_netif
+[ 98%] Built target bootloader.elf
+[ 14%] Built target __idf_esp_netif
+[100%] Built target gen_project_binary
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[100%] Built target bootloader_check_size
+Consolidate compiler generated dependencies of target __idf_lwip
+[100%] Built target app
+[ 14%] No install step for 'bootloader'
+[ 21%] Built target __idf_lwip
+[ 21%] Completed 'bootloader'
+Consolidate compiler generated dependencies of target __idf_vfs
+[ 22%] Built target __idf_vfs
+Consolidate compiler generated dependencies of target __idf_esp_phy
+[ 23%] Built target bootloader
+[ 23%] Built target __idf_esp_phy
+Consolidate compiler generated dependencies of target __idf_nvs_flash
+[ 24%] Built target __idf_nvs_flash
+Consolidate compiler generated dependencies of target __idf_esp_event
+[ 24%] Built target __idf_esp_event
+Consolidate compiler generated dependencies of target __idf_esp_timer
+[ 25%] Built target __idf_esp_timer
+Consolidate compiler generated dependencies of target __idf_esp_common
+[ 25%] Built target __idf_esp_common
+Consolidate compiler generated dependencies of target __idf_cxx
+[ 25%] Built target __idf_cxx
+Consolidate compiler generated dependencies of target __idf_newlib
+[ 26%] Built target __idf_newlib
+Scanning dependencies of target __idf_freertos
+Consolidate compiler generated dependencies of target __idf_freertos
+[ 27%] Built target __idf_freertos
+Consolidate compiler generated dependencies of target __idf_esp_hw_support
+[ 30%] Built target __idf_esp_hw_support
+Consolidate compiler generated dependencies of target __idf_soc
+[ 32%] Built target __idf_soc
+Consolidate compiler generated dependencies of target __idf_heap
+[ 32%] Built target __idf_heap
+Consolidate compiler generated dependencies of target __idf_log
+[ 32%] Built target __idf_log
+Consolidate compiler generated dependencies of target __idf_hal
+[ 36%] Built target __idf_hal
+Scanning dependencies of target __idf_esp_rom
+Consolidate compiler generated dependencies of target __idf_esp_rom
+[ 37%] Built target __idf_esp_rom
+Scanning dependencies of target __idf_esp_system
+Consolidate compiler generated dependencies of target __idf_esp_system
+[ 40%] Built target __idf_esp_system
+Consolidate compiler generated dependencies of target __idf_pthread
+[ 40%] Built target __idf_pthread
+Consolidate compiler generated dependencies of target __idf_spi_flash
+[ 42%] Built target __idf_spi_flash
+Consolidate compiler generated dependencies of target __idf_esp_mm
+[ 43%] Built target __idf_esp_mm
+Consolidate compiler generated dependencies of target __idf_app_update
+[ 43%] Built target __idf_app_update
+Consolidate compiler generated dependencies of target __idf_esp_partition
+[ 44%] Built target __idf_esp_partition
+Consolidate compiler generated dependencies of target __idf_bootloader_support
+[ 45%] Built target __idf_bootloader_support
+Consolidate compiler generated dependencies of target __idf_esp_app_format
+[ 46%] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[ 46%] Linking C static library libesp_app_format.a
+[ 46%] Built target __idf_esp_app_format
+Consolidate compiler generated dependencies of target mbedtls
+[ 47%] Built target mbedtls
+Consolidate compiler generated dependencies of target mbedx509
+[ 48%] Built target mbedx509
+Consolidate compiler generated dependencies of target mbedcrypto
+[ 56%] Built target mbedcrypto
+Consolidate compiler generated dependencies of target p256m
+[ 57%] Built target p256m
+Consolidate compiler generated dependencies of target everest
+[ 57%] Built target everest
+Scanning dependencies of target __idf_mbedtls
+Consolidate compiler generated dependencies of target __idf_mbedtls
+[ 57%] Built target __idf_mbedtls
+Consolidate compiler generated dependencies of target __idf_esp_pm
+[ 57%] Built target __idf_esp_pm
+Consolidate compiler generated dependencies of target __idf_driver
+[ 62%] Built target __idf_driver
+Consolidate compiler generated dependencies of target __idf_efuse
+[ 62%] Built target __idf_efuse
+Consolidate compiler generated dependencies of target __idf_esp_ringbuf
+[ 62%] Built target __idf_esp_ringbuf
+Scanning dependencies of target __idf_xtensa
+Consolidate compiler generated dependencies of target __idf_xtensa
+[ 63%] Built target __idf_xtensa
+Consolidate compiler generated dependencies of target __idf_uart
+Consolidate compiler generated dependencies of target __idf_xpower
+Consolidate compiler generated dependencies of target __idf_app_trace
+Consolidate compiler generated dependencies of target __idf_protobuf-c
+Consolidate compiler generated dependencies of target __idf_unity
+Consolidate compiler generated dependencies of target __idf_console
+Consolidate compiler generated dependencies of target __idf_mqtt
+Consolidate compiler generated dependencies of target __idf_esp_lcd
+[ 63%] Built target __idf_uart
+[ 63%] Built target __idf_xpower
+[ 63%] Built target __idf_app_trace
+Consolidate compiler generated dependencies of target __idf_espcoredump
+[ 64%] Built target __idf_console
+[ 64%] Built target __idf_unity
+[ 64%] Built target __idf_protobuf-c
+[ 65%] Built target __idf_mqtt
+[ 66%] Built target __idf_esp_lcd
+Consolidate compiler generated dependencies of target __idf_wear_levelling
+Consolidate compiler generated dependencies of target __idf_sdmmc
+Consolidate compiler generated dependencies of target __idf_json
+Consolidate compiler generated dependencies of target __idf_perfmon
+[ 67%] Built target __idf_espcoredump
+Consolidate compiler generated dependencies of target __idf_touch_element
+Consolidate compiler generated dependencies of target __idf_usb
+Consolidate compiler generated dependencies of target __idf_spiffs
+Consolidate compiler generated dependencies of target __idf_devices
+Consolidate compiler generated dependencies of target __idf_cmock
+[ 67%] Built target __idf_wear_levelling
+[ 68%] Built target __idf_sdmmc
+[ 69%] Built target __idf_perfmon
+[ 69%] Built target __idf_touch_element
+[ 70%] Built target __idf_json
+[ 71%] Built target __idf_usb
+[ 71%] Built target __idf_devices
+[ 71%] Built target __idf_spiffs
+[ 71%] Built target __idf_cmock
+Consolidate compiler generated dependencies of target __idf_fatfs
+Consolidate compiler generated dependencies of target __idf_communication
+[ 72%] Built target __idf_communication
+[ 73%] Built target __idf_fatfs
+Consolidate compiler generated dependencies of target __idf_gsm
+[ 74%] Built target __idf_gsm
+Consolidate compiler generated dependencies of target __idf_mqtts
+[ 74%] Built target __idf_mqtts
+Consolidate compiler generated dependencies of target __idf_storage
+[ 74%] Built target __idf_storage
+Consolidate compiler generated dependencies of target __idf_wifi
+[ 74%] Built target __idf_wifi
+Consolidate compiler generated dependencies of target __idf_main
+Consolidate compiler generated dependencies of target __idf_bt
+[ 74%] Built target __idf_main
+[ 97%] Built target __idf_bt
+Consolidate compiler generated dependencies of target __idf_esp_hid
+Consolidate compiler generated dependencies of target __idf_protocomm
+[ 97%] Built target __idf_esp_hid
+[ 98%] Built target __idf_protocomm
+Consolidate compiler generated dependencies of target __idf_esp_local_ctrl
+Consolidate compiler generated dependencies of target __idf_wifi_provisioning
+[ 98%] Built target __idf_esp_local_ctrl
+[100%] Built target __idf_wifi_provisioning
+[100%] Generating ld/sections.ld
+[100%] Built target __ldgen_output_sections.ld
+Scanning dependencies of target revolog5g.elf
+Consolidate compiler generated dependencies of target revolog5g.elf
+[100%] Linking CXX executable revolog5g.elf
+[100%] Built target revolog5g.elf
+[100%] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/santos/Documents/stlab/esp32s3/build/revolog5g.bin
+[100%] Built target gen_project_binary
+revolog5g.bin binary size 0x4edf0 bytes. Smallest app partition is 0x1f0000 bytes. 0x1a1210 bytes (84%) free.
+[100%] Built target app_check_size
+[100%] Built target app

@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/santos/Documents/stlab/esp32s3/build/broker_ca.pem.S
+
+/home/santos/Documents/stlab/esp32s3/build/root_ca.pem.S
+

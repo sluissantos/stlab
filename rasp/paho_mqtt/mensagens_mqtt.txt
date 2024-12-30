@@ -1,0 +1,19 @@
+Tópico: stlab/nrf9160/up/status Mensagem: one Data e Hora: 2024-12-28 18:16:35.128905
+Tópico: stlab/nrf9160/up/status Mensagem: one Time: 1735420755.469217 Date: 2024-12-28 18:19:15.469217
+
+Tópico: stlab/nrf9160/up/status Mensagem: one Time: 1735420802.609021 Date: 2024-12-28 18:20:02.609021
+Tópico: stlab/nrf9160/up/status Mensagem: one Time: 1735420842.047101 Date: 2024-12-28 18:20:42.47101
+Tópico: stlab/nrf9160/up/status Mensagem: one Time: 1735420880.503058 Date: 2024-12-28 18:21:20
+Tópico: stlab/nrf9160/up/status Mensagem: one Time: 1735420884.573665 Date: 2024-12-28 18:21:24
+Tópico: stlab/nrf9160/up/status Mensagem: one Time: 1735420887.573171 Date: 2024-12-28 18:21:27
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420900.508939 Date: 2024-12-28 18:21:40
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420901.411664 Date: 2024-12-28 18:21:41
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420901.845993 Date: 2024-12-28 18:21:41
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420901.986477 Date: 2024-12-28 18:21:41
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420902.147428 Date: 2024-12-28 18:21:42
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420902.249709 Date: 2024-12-28 18:21:42
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420902.346497 Date: 2024-12-28 18:21:42
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420902.458908 Date: 2024-12-28 18:21:42
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735420902.550511 Date: 2024-12-28 18:21:42
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735421735.668684 Date: 2024-12-28 18:35:35
+Tópico: stlab/sim7080/up/status Mensagem: one Time: 1735421738.900178 Date: 2024-12-28 18:35:38

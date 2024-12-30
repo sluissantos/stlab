@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "config/sdkconfig.h"
+  "config/sdkconfig.cmake"
+  "bootloader/bootloader.elf"
+  "bootloader/bootloader.bin"
+  "bootloader/bootloader.map"
+  "revolog5g.bin"
+  "flash_project_args"
+  "revolog5g.map"
+  "project_elf_src_esp32s3.c"
+  "broker_ca.pem.S"
+  "root_ca.pem.S"
+)

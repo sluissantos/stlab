@@ -1,0 +1,31 @@
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c: In function 'deviceConnect':
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c:85:13: warning: unused variable 'data' [-Wunused-variable]
+   85 |     uint8_t data[1] = {deviceIndx};
+      |             ^~~~
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c:84:12: warning: unused variable 'connAvailable' [-Wunused-variable]
+   84 |     int8_t connAvailable =-1;
+      |            ^~~~~~~~~~~~~
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c:83:21: warning: unused variable 'localTimer' [-Wunused-variable]
+   83 |     static uint16_t localTimer=0;
+      |                     ^~~~~~~~~~
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c:82:20: warning: unused variable 'toogle' [-Wunused-variable]
+   82 |     static uint8_t toogle=0;
+      |                    ^~~~~~
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c: In function 'deviceDisconnect':
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c:124:17: warning: unused variable 'connId' [-Wunused-variable]
+  124 |         uint8_t connId[1]  ={deviceIndx};
+      |                 ^~~~~~
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c: At top level:
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c:82:20: warning: 'toogle' defined but not used [-Wunused-variable]
+   82 |     static uint8_t toogle=0;
+      |                    ^~~~~~
+/home/santos/Documents/stlab/esp32s3/extra_components/devices/devices_main.c:83:21: warning: 'localTimer' defined but not used [-Wunused-variable]
+   83 |     static uint16_t localTimer=0;
+      |                     ^~~~~~~~~~
+/home/santos/Documents/stlab/esp32s3/extra_components/gsm/gsmMQTT.c: In function 'gsmMqttPublishMqtt':
+/home/santos/Documents/stlab/esp32s3/extra_components/gsm/gsmMQTT.c:58:19: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   58 |                 if(gsmModemCommand(message, gsmMqttAnswer, message) == GSM_MODEM_EXPECTED_ANSWER){
+      |                   ^
+/home/santos/Documents/stlab/esp32s3/extra_components/gsm/gsmMQTT.c:62:13: note: here
+   62 |             default:
+      |             ^~~~~~~
